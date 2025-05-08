@@ -1,5 +1,0 @@
-aku gatau harus nulis apa, 
-tapi kata ai, buat jalanin dashboard ini ada beberapa tahap.
-
-1. pastiin kamu punya Dockerfile, docker-compose.yml, package.json, dan sisa file/folder dari hasil pull
-2. jalanin "docker-compose up -d" di folder hasil pull
