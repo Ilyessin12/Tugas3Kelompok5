@@ -1,0 +1,4 @@
+2025-05-11 11:04:55,262 - root - INFO - Logging initialized. Log file: /app/cache/error_logs/scraper_20250511_110455.log
+2025-05-11 11:04:55,265 - __main__ - INFO - Starting financial report pipeline in mode 'all'
+2025-05-11 11:04:55,269 - __main__ - INFO - Starting Financial Report scraper...
+2025-05-11 11:04:55,280 - __main__ - ERROR - Error running financial report pipeline: 'IDXFinancialScraper' object has no attribute 'run_with_file'

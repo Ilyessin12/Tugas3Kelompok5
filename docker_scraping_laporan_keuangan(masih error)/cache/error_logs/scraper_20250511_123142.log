@@ -1,0 +1,9 @@
+2025-05-11 12:31:42,721 - root - INFO - Logging initialized. Log file: /app/cache/error_logs/scraper_20250511_123142.log
+2025-05-11 12:31:42,723 - __main__ - INFO - Starting financial report pipeline in mode 'all'
+2025-05-11 12:31:42,730 - __main__ - INFO - Starting Financial Report scraper...
+2025-05-11 12:34:15,659 - __main__ - INFO - Financial Report scraper completed. Scraped 0 reports.
+2025-05-11 12:34:15,660 - __main__ - INFO - Starting Financial Report ingestion...
+2025-05-11 12:34:15,661 - src.ingestion.financial_ingestion - INFO - Loading data from JSON file...
+2025-05-11 12:34:15,671 - src.ingestion.financial_ingestion - WARNING - No data found in /app/cache/financial_reports/financial_reports.json
+2025-05-11 12:34:15,672 - __main__ - INFO - Financial Report ingestion completed. Inserted 0 and updated 0 reports.
+2025-05-11 12:34:15,673 - __main__ - INFO - Financial report pipeline completed successfully

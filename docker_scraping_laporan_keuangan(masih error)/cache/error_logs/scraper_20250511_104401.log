@@ -1,0 +1,13 @@
+2025-05-11 10:44:01,756 - root - INFO - Logging initialized. Log file: /app/cache/error_logs/scraper_20250511_104401.log
+2025-05-11 10:44:01,760 - __main__ - INFO - Starting financial report pipeline in mode 'all'
+2025-05-11 10:44:01,763 - __main__ - INFO - Starting Financial Report scraper...
+2025-05-11 10:44:01,776 - src.scrapers.financial_scraper - INFO - Loaded 0 existing reports from /app/cache/financial_reports/financial_reports.json
+2025-05-11 10:44:01,777 - src.scrapers.financial_scraper - INFO - Already scraped 0 companies
+2025-05-11 10:44:01,780 - src.scrapers.financial_scraper - INFO - Loaded 3 emitens from /app/src/scrapers/emiten_list.json
+2025-05-11 10:44:01,781 - src.scrapers.financial_scraper - INFO - Will scrape 3 remaining companies out of 3 total
+2025-05-11 10:44:01,782 - src.scrapers.financial_scraper - INFO - Running in headless mode for Docker environment
+2025-05-11 10:44:01,783 - src.scrapers.financial_scraper - INFO - Connecting to remote WebDriver at http://chrome:4444/wd/hub
+2025-05-11 10:44:01,789 - urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f687f2e67a0>: Failed to establish a new connection: [Errno 111] Connection refused')': /wd/hub/session
+2025-05-11 10:44:01,792 - urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f687ee5b850>: Failed to establish a new connection: [Errno 111] Connection refused')': /wd/hub/session
+2025-05-11 10:44:01,795 - urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f687ee5ba00>: Failed to establish a new connection: [Errno 111] Connection refused')': /wd/hub/session
+2025-05-11 10:44:01,797 - __main__ - ERROR - Error running financial report pipeline: HTTPConnectionPool(host='chrome', port=4444): Max retries exceeded with url: /wd/hub/session (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f687ee5bbb0>: Failed to establish a new connection: [Errno 111] Connection refused'))
