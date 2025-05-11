@@ -31,7 +31,7 @@ def connect_db():
         stock_collection = db[settings.COLLECTION_YFINANCE_DATA]
         news_collection = db[settings.COLLECTION_NEWS_DATA]
         news_summary_collection = db[settings.COLLECTION_NEWS_SUMMARY_DATA]
-        financial_report_collection = db[settings.COLLECTION_FINANCIAL_REPORT_DATA]
+        financial_report_collection = db[settings.COLLECTION_FINANCIAL_REPORTS]  # Changed from COLLECTION_FINANCIAL_REPORT_DATA
         
         print("Successfully connected to MongoDB.")
     except ConnectionFailure as e:
