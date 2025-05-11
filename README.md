@@ -21,4 +21,30 @@ tapi kata ai, buat jalanin dashboard ini ada beberapa tahap.
 - **entrypoint.sh** ada di folder scripts, untuk pengembangan **dag** ada di folder src, config si airflow ada di folder **config** (serah make atau nggak, kalo nggak apus aja we). untuk folder **plugins** itu isinya plugin, kalo kosong boleh diapus serah.
 
 ## API
-- Kode ada di src
+### Cara Penggunaan
+1. Run this for the first time:
+```
+docker-compose up --build
+```
+or
+```
+docker-compose up -d --build
+docker-compose logs -f api
+```
+for detached mode
+
+2. For the second time just run
+```
+docker-compose up
+```
+or
+```
+docker-compose up -d
+docker-compose logs -f api
+```
+for detached mode
+
+3. API should be accessable in an ngrok link, and the guide to how to use the API will be available when accessing the index page
+
+### Additional Notes
+Don't forget to fill in your own **API AUTH TOKEN** in the .env, refer to .env example
