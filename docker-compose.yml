@@ -44,7 +44,7 @@ services:
       - mongodb
     networks:
       - app-network
-    container_name: bigdata5-api
+    container_name: bigdata5-transform
   
   # Mongodb (dibutuhin transform biar bisa konek sama mmongo)
   mongodb:
