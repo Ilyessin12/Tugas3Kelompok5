@@ -1,0 +1,375 @@
+2025-05-11 09:47:54,490 - root - INFO - Logging initialized. Log file: /app/cache/error_logs/scraper_20250511_094754.log
+2025-05-11 09:47:54,491 - __main__ - INFO - Starting financial report pipeline in mode 'all'
+2025-05-11 09:47:54,493 - __main__ - INFO - Starting Financial Report scraper...
+2025-05-11 09:47:54,498 - src.scrapers.financial_scraper - INFO - Loaded 0 existing records, scraped pairs: 0
+2025-05-11 09:47:54,499 - src.scrapers.financial_scraper - INFO - Loaded 3 emitens from /app/src/scrapers/emiten_list.json
+2025-05-11 09:47:54,820 - src.scrapers.financial_scraper - INFO - WebDriver initialized
+2025-05-11 09:48:25,219 - src.scrapers.financial_scraper - ERROR - Error on AALI_2025: Message: 
+Stacktrace:
+#0 0x5578b39777fa <unknown>
+#1 0x5578b341be90 <unknown>
+#2 0x5578b346d870 <unknown>
+#3 0x5578b346da61 <unknown>
+#4 0x5578b34bbcb4 <unknown>
+#5 0x5578b349326d <unknown>
+#6 0x5578b34b9135 <unknown>
+#7 0x5578b3493013 <unknown>
+#8 0x5578b345fb3b <unknown>
+#9 0x5578b34607a1 <unknown>
+#10 0x5578b393cb9b <unknown>
+#11 0x5578b3940a8a <unknown>
+#12 0x5578b3924912 <unknown>
+#13 0x5578b3941604 <unknown>
+#14 0x5578b390974f <unknown>
+#15 0x5578b3965678 <unknown>
+#16 0x5578b3965856 <unknown>
+#17 0x5578b3976666 <unknown>
+#18 0x7f8fed8caaa4 <unknown>
+#19 0x7f8fed957c3c <unknown>
+
+2025-05-11 09:48:25,224 - root - INFO - Saved data to /app/cache/financial_reports/financial_reports.json
+2025-05-11 09:48:55,388 - src.scrapers.financial_scraper - ERROR - Error on AALI_2024: Message: 
+Stacktrace:
+#0 0x5578b39777fa <unknown>
+#1 0x5578b341be90 <unknown>
+#2 0x5578b346d870 <unknown>
+#3 0x5578b346da61 <unknown>
+#4 0x5578b34bbcb4 <unknown>
+#5 0x5578b349326d <unknown>
+#6 0x5578b34b9135 <unknown>
+#7 0x5578b3493013 <unknown>
+#8 0x5578b345fb3b <unknown>
+#9 0x5578b34607a1 <unknown>
+#10 0x5578b393cb9b <unknown>
+#11 0x5578b3940a8a <unknown>
+#12 0x5578b3924912 <unknown>
+#13 0x5578b3941604 <unknown>
+#14 0x5578b390974f <unknown>
+#15 0x5578b3965678 <unknown>
+#16 0x5578b3965856 <unknown>
+#17 0x5578b3976666 <unknown>
+#18 0x7f8fed8caaa4 <unknown>
+#19 0x7f8fed957c3c <unknown>
+
+2025-05-11 09:48:55,393 - root - INFO - Saved data to /app/cache/financial_reports/financial_reports.json
+2025-05-11 09:49:25,545 - src.scrapers.financial_scraper - ERROR - Error on AALI_2023: Message: 
+Stacktrace:
+#0 0x5578b39777fa <unknown>
+#1 0x5578b341be90 <unknown>
+#2 0x5578b346d870 <unknown>
+#3 0x5578b346da61 <unknown>
+#4 0x5578b34bbcb4 <unknown>
+#5 0x5578b349326d <unknown>
+#6 0x5578b34b9135 <unknown>
+#7 0x5578b3493013 <unknown>
+#8 0x5578b345fb3b <unknown>
+#9 0x5578b34607a1 <unknown>
+#10 0x5578b393cb9b <unknown>
+#11 0x5578b3940a8a <unknown>
+#12 0x5578b3924912 <unknown>
+#13 0x5578b3941604 <unknown>
+#14 0x5578b390974f <unknown>
+#15 0x5578b3965678 <unknown>
+#16 0x5578b3965856 <unknown>
+#17 0x5578b3976666 <unknown>
+#18 0x7f8fed8caaa4 <unknown>
+#19 0x7f8fed957c3c <unknown>
+
+2025-05-11 09:49:25,550 - root - INFO - Saved data to /app/cache/financial_reports/financial_reports.json
+2025-05-11 09:49:55,742 - src.scrapers.financial_scraper - ERROR - Error on AALI_2022: Message: 
+Stacktrace:
+#0 0x5578b39777fa <unknown>
+#1 0x5578b341be90 <unknown>
+#2 0x5578b346d870 <unknown>
+#3 0x5578b346da61 <unknown>
+#4 0x5578b34bbcb4 <unknown>
+#5 0x5578b349326d <unknown>
+#6 0x5578b34b9135 <unknown>
+#7 0x5578b3493013 <unknown>
+#8 0x5578b345fb3b <unknown>
+#9 0x5578b34607a1 <unknown>
+#10 0x5578b393cb9b <unknown>
+#11 0x5578b3940a8a <unknown>
+#12 0x5578b3924912 <unknown>
+#13 0x5578b3941604 <unknown>
+#14 0x5578b390974f <unknown>
+#15 0x5578b3965678 <unknown>
+#16 0x5578b3965856 <unknown>
+#17 0x5578b3976666 <unknown>
+#18 0x7f8fed8caaa4 <unknown>
+#19 0x7f8fed957c3c <unknown>
+
+2025-05-11 09:49:55,747 - root - INFO - Saved data to /app/cache/financial_reports/financial_reports.json
+2025-05-11 09:50:25,988 - src.scrapers.financial_scraper - ERROR - Error on AALI_2021: Message: 
+Stacktrace:
+#0 0x5578b39777fa <unknown>
+#1 0x5578b341be90 <unknown>
+#2 0x5578b346d870 <unknown>
+#3 0x5578b346da61 <unknown>
+#4 0x5578b34bbcb4 <unknown>
+#5 0x5578b349326d <unknown>
+#6 0x5578b34b9135 <unknown>
+#7 0x5578b3493013 <unknown>
+#8 0x5578b345fb3b <unknown>
+#9 0x5578b34607a1 <unknown>
+#10 0x5578b393cb9b <unknown>
+#11 0x5578b3940a8a <unknown>
+#12 0x5578b3924912 <unknown>
+#13 0x5578b3941604 <unknown>
+#14 0x5578b390974f <unknown>
+#15 0x5578b3965678 <unknown>
+#16 0x5578b3965856 <unknown>
+#17 0x5578b3976666 <unknown>
+#18 0x7f8fed8caaa4 <unknown>
+#19 0x7f8fed957c3c <unknown>
+
+2025-05-11 09:50:25,993 - root - INFO - Saved data to /app/cache/financial_reports/financial_reports.json
+2025-05-11 09:50:56,150 - src.scrapers.financial_scraper - ERROR - Error on BBCA_2025: Message: 
+Stacktrace:
+#0 0x5578b39777fa <unknown>
+#1 0x5578b341be90 <unknown>
+#2 0x5578b346d870 <unknown>
+#3 0x5578b346da61 <unknown>
+#4 0x5578b34bbcb4 <unknown>
+#5 0x5578b349326d <unknown>
+#6 0x5578b34b9135 <unknown>
+#7 0x5578b3493013 <unknown>
+#8 0x5578b345fb3b <unknown>
+#9 0x5578b34607a1 <unknown>
+#10 0x5578b393cb9b <unknown>
+#11 0x5578b3940a8a <unknown>
+#12 0x5578b3924912 <unknown>
+#13 0x5578b3941604 <unknown>
+#14 0x5578b390974f <unknown>
+#15 0x5578b3965678 <unknown>
+#16 0x5578b3965856 <unknown>
+#17 0x5578b3976666 <unknown>
+#18 0x7f8fed8caaa4 <unknown>
+#19 0x7f8fed957c3c <unknown>
+
+2025-05-11 09:50:56,155 - root - INFO - Saved data to /app/cache/financial_reports/financial_reports.json
+2025-05-11 09:51:26,639 - src.scrapers.financial_scraper - ERROR - Error on BBCA_2024: Message: 
+Stacktrace:
+#0 0x5578b39777fa <unknown>
+#1 0x5578b341be90 <unknown>
+#2 0x5578b346d870 <unknown>
+#3 0x5578b346da61 <unknown>
+#4 0x5578b34bbcb4 <unknown>
+#5 0x5578b349326d <unknown>
+#6 0x5578b34b9135 <unknown>
+#7 0x5578b3493013 <unknown>
+#8 0x5578b345fb3b <unknown>
+#9 0x5578b34607a1 <unknown>
+#10 0x5578b393cb9b <unknown>
+#11 0x5578b3940a8a <unknown>
+#12 0x5578b3924912 <unknown>
+#13 0x5578b3941604 <unknown>
+#14 0x5578b390974f <unknown>
+#15 0x5578b3965678 <unknown>
+#16 0x5578b3965856 <unknown>
+#17 0x5578b3976666 <unknown>
+#18 0x7f8fed8caaa4 <unknown>
+#19 0x7f8fed957c3c <unknown>
+
+2025-05-11 09:51:26,643 - root - INFO - Saved data to /app/cache/financial_reports/financial_reports.json
+2025-05-11 09:51:56,741 - src.scrapers.financial_scraper - ERROR - Error on BBCA_2023: Message: 
+Stacktrace:
+#0 0x5578b39777fa <unknown>
+#1 0x5578b341be90 <unknown>
+#2 0x5578b346d870 <unknown>
+#3 0x5578b346da61 <unknown>
+#4 0x5578b34bbcb4 <unknown>
+#5 0x5578b349326d <unknown>
+#6 0x5578b34b9135 <unknown>
+#7 0x5578b3493013 <unknown>
+#8 0x5578b345fb3b <unknown>
+#9 0x5578b34607a1 <unknown>
+#10 0x5578b393cb9b <unknown>
+#11 0x5578b3940a8a <unknown>
+#12 0x5578b3924912 <unknown>
+#13 0x5578b3941604 <unknown>
+#14 0x5578b390974f <unknown>
+#15 0x5578b3965678 <unknown>
+#16 0x5578b3965856 <unknown>
+#17 0x5578b3976666 <unknown>
+#18 0x7f8fed8caaa4 <unknown>
+#19 0x7f8fed957c3c <unknown>
+
+2025-05-11 09:51:56,746 - root - INFO - Saved data to /app/cache/financial_reports/financial_reports.json
+2025-05-11 09:52:27,048 - src.scrapers.financial_scraper - ERROR - Error on BBCA_2022: Message: 
+Stacktrace:
+#0 0x5578b39777fa <unknown>
+#1 0x5578b341be90 <unknown>
+#2 0x5578b346d870 <unknown>
+#3 0x5578b346da61 <unknown>
+#4 0x5578b34bbcb4 <unknown>
+#5 0x5578b349326d <unknown>
+#6 0x5578b34b9135 <unknown>
+#7 0x5578b3493013 <unknown>
+#8 0x5578b345fb3b <unknown>
+#9 0x5578b34607a1 <unknown>
+#10 0x5578b393cb9b <unknown>
+#11 0x5578b3940a8a <unknown>
+#12 0x5578b3924912 <unknown>
+#13 0x5578b3941604 <unknown>
+#14 0x5578b390974f <unknown>
+#15 0x5578b3965678 <unknown>
+#16 0x5578b3965856 <unknown>
+#17 0x5578b3976666 <unknown>
+#18 0x7f8fed8caaa4 <unknown>
+#19 0x7f8fed957c3c <unknown>
+
+2025-05-11 09:52:27,052 - root - INFO - Saved data to /app/cache/financial_reports/financial_reports.json
+2025-05-11 09:52:57,621 - src.scrapers.financial_scraper - ERROR - Error on BBCA_2021: Message: 
+Stacktrace:
+#0 0x5578b39777fa <unknown>
+#1 0x5578b341be90 <unknown>
+#2 0x5578b346d870 <unknown>
+#3 0x5578b346da61 <unknown>
+#4 0x5578b34bbcb4 <unknown>
+#5 0x5578b349326d <unknown>
+#6 0x5578b34b9135 <unknown>
+#7 0x5578b3493013 <unknown>
+#8 0x5578b345fb3b <unknown>
+#9 0x5578b34607a1 <unknown>
+#10 0x5578b393cb9b <unknown>
+#11 0x5578b3940a8a <unknown>
+#12 0x5578b3924912 <unknown>
+#13 0x5578b3941604 <unknown>
+#14 0x5578b390974f <unknown>
+#15 0x5578b3965678 <unknown>
+#16 0x5578b3965856 <unknown>
+#17 0x5578b3976666 <unknown>
+#18 0x7f8fed8caaa4 <unknown>
+#19 0x7f8fed957c3c <unknown>
+
+2025-05-11 09:52:57,625 - root - INFO - Saved data to /app/cache/financial_reports/financial_reports.json
+2025-05-11 09:53:27,719 - src.scrapers.financial_scraper - ERROR - Error on TLKM_2025: Message: 
+Stacktrace:
+#0 0x5578b39777fa <unknown>
+#1 0x5578b341be90 <unknown>
+#2 0x5578b346d870 <unknown>
+#3 0x5578b346da61 <unknown>
+#4 0x5578b34bbcb4 <unknown>
+#5 0x5578b349326d <unknown>
+#6 0x5578b34b9135 <unknown>
+#7 0x5578b3493013 <unknown>
+#8 0x5578b345fb3b <unknown>
+#9 0x5578b34607a1 <unknown>
+#10 0x5578b393cb9b <unknown>
+#11 0x5578b3940a8a <unknown>
+#12 0x5578b3924912 <unknown>
+#13 0x5578b3941604 <unknown>
+#14 0x5578b390974f <unknown>
+#15 0x5578b3965678 <unknown>
+#16 0x5578b3965856 <unknown>
+#17 0x5578b3976666 <unknown>
+#18 0x7f8fed8caaa4 <unknown>
+#19 0x7f8fed957c3c <unknown>
+
+2025-05-11 09:53:27,723 - root - INFO - Saved data to /app/cache/financial_reports/financial_reports.json
+2025-05-11 09:53:57,817 - src.scrapers.financial_scraper - ERROR - Error on TLKM_2024: Message: 
+Stacktrace:
+#0 0x5578b39777fa <unknown>
+#1 0x5578b341be90 <unknown>
+#2 0x5578b346d870 <unknown>
+#3 0x5578b346da61 <unknown>
+#4 0x5578b34bbcb4 <unknown>
+#5 0x5578b349326d <unknown>
+#6 0x5578b34b9135 <unknown>
+#7 0x5578b3493013 <unknown>
+#8 0x5578b345fb3b <unknown>
+#9 0x5578b34607a1 <unknown>
+#10 0x5578b393cb9b <unknown>
+#11 0x5578b3940a8a <unknown>
+#12 0x5578b3924912 <unknown>
+#13 0x5578b3941604 <unknown>
+#14 0x5578b390974f <unknown>
+#15 0x5578b3965678 <unknown>
+#16 0x5578b3965856 <unknown>
+#17 0x5578b3976666 <unknown>
+#18 0x7f8fed8caaa4 <unknown>
+#19 0x7f8fed957c3c <unknown>
+
+2025-05-11 09:53:57,822 - root - INFO - Saved data to /app/cache/financial_reports/financial_reports.json
+2025-05-11 09:54:27,924 - src.scrapers.financial_scraper - ERROR - Error on TLKM_2023: Message: 
+Stacktrace:
+#0 0x5578b39777fa <unknown>
+#1 0x5578b341be90 <unknown>
+#2 0x5578b346d870 <unknown>
+#3 0x5578b346da61 <unknown>
+#4 0x5578b34bbcb4 <unknown>
+#5 0x5578b349326d <unknown>
+#6 0x5578b34b9135 <unknown>
+#7 0x5578b3493013 <unknown>
+#8 0x5578b345fb3b <unknown>
+#9 0x5578b34607a1 <unknown>
+#10 0x5578b393cb9b <unknown>
+#11 0x5578b3940a8a <unknown>
+#12 0x5578b3924912 <unknown>
+#13 0x5578b3941604 <unknown>
+#14 0x5578b390974f <unknown>
+#15 0x5578b3965678 <unknown>
+#16 0x5578b3965856 <unknown>
+#17 0x5578b3976666 <unknown>
+#18 0x7f8fed8caaa4 <unknown>
+#19 0x7f8fed957c3c <unknown>
+
+2025-05-11 09:54:27,929 - root - INFO - Saved data to /app/cache/financial_reports/financial_reports.json
+2025-05-11 09:54:58,037 - src.scrapers.financial_scraper - ERROR - Error on TLKM_2022: Message: 
+Stacktrace:
+#0 0x5578b39777fa <unknown>
+#1 0x5578b341be90 <unknown>
+#2 0x5578b346d870 <unknown>
+#3 0x5578b346da61 <unknown>
+#4 0x5578b34bbcb4 <unknown>
+#5 0x5578b349326d <unknown>
+#6 0x5578b34b9135 <unknown>
+#7 0x5578b3493013 <unknown>
+#8 0x5578b345fb3b <unknown>
+#9 0x5578b34607a1 <unknown>
+#10 0x5578b393cb9b <unknown>
+#11 0x5578b3940a8a <unknown>
+#12 0x5578b3924912 <unknown>
+#13 0x5578b3941604 <unknown>
+#14 0x5578b390974f <unknown>
+#15 0x5578b3965678 <unknown>
+#16 0x5578b3965856 <unknown>
+#17 0x5578b3976666 <unknown>
+#18 0x7f8fed8caaa4 <unknown>
+#19 0x7f8fed957c3c <unknown>
+
+2025-05-11 09:54:58,041 - root - INFO - Saved data to /app/cache/financial_reports/financial_reports.json
+2025-05-11 09:55:28,208 - src.scrapers.financial_scraper - ERROR - Error on TLKM_2021: Message: 
+Stacktrace:
+#0 0x5578b39777fa <unknown>
+#1 0x5578b341be90 <unknown>
+#2 0x5578b346d870 <unknown>
+#3 0x5578b346da61 <unknown>
+#4 0x5578b34bbcb4 <unknown>
+#5 0x5578b349326d <unknown>
+#6 0x5578b34b9135 <unknown>
+#7 0x5578b3493013 <unknown>
+#8 0x5578b345fb3b <unknown>
+#9 0x5578b34607a1 <unknown>
+#10 0x5578b393cb9b <unknown>
+#11 0x5578b3940a8a <unknown>
+#12 0x5578b3924912 <unknown>
+#13 0x5578b3941604 <unknown>
+#14 0x5578b390974f <unknown>
+#15 0x5578b3965678 <unknown>
+#16 0x5578b3965856 <unknown>
+#17 0x5578b3976666 <unknown>
+#18 0x7f8fed8caaa4 <unknown>
+#19 0x7f8fed957c3c <unknown>
+
+2025-05-11 09:55:28,212 - root - INFO - Saved data to /app/cache/financial_reports/financial_reports.json
+2025-05-11 09:55:28,216 - root - INFO - Saved data to /app/cache/financial_reports/financial_reports.json
+2025-05-11 09:55:28,216 - src.scrapers.financial_scraper - INFO - Total scraped: 0 records → /app/cache/financial_reports/financial_reports.json
+2025-05-11 09:55:28,381 - src.scrapers.financial_scraper - INFO - WebDriver closed
+2025-05-11 09:55:28,382 - __main__ - INFO - Financial Report scraper completed. Scraped 0 reports.
+2025-05-11 09:55:28,382 - __main__ - INFO - Starting Financial Report ingestion...
+2025-05-11 09:55:28,383 - src.ingestion.financial_ingestion - INFO - Loading data from JSON file...
+2025-05-11 09:55:28,387 - src.ingestion.financial_ingestion - WARNING - No data found in /app/cache/financial_reports/financial_reports.json
+2025-05-11 09:55:28,388 - __main__ - INFO - Financial Report ingestion completed. Inserted 0 and updated 0 reports.
+2025-05-11 09:55:28,388 - __main__ - INFO - Financial report pipeline completed successfully

@@ -9,7 +9,6 @@ import logging
 import functools
 import shutil
 from typing import Any, List, Dict, Callable, TypeVar
-from dotenv import load_dotenv, find_dotenv
 
 # Type variables for return type
 T = TypeVar('T')

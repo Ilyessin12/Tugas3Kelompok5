@@ -1,0 +1,54 @@
+2025-05-11 09:12:55,836 - root - INFO - Logging initialized. Log file: /app/cache/error_logs/scraper_20250511_091255.log
+2025-05-11 09:12:55,837 - __main__ - INFO - Starting financial report pipeline in mode 'all'
+2025-05-11 09:12:55,839 - __main__ - INFO - Starting Financial Report scraper...
+2025-05-11 09:12:55,845 - src.scrapers.financial_scraper - INFO - Loaded 0 existing records, scraped pairs: 0
+2025-05-11 09:12:55,845 - src.scrapers.financial_scraper - INFO - Loaded 3 emitens from /app/src/scrapers/emiten_list.json
+2025-05-11 09:12:56,254 - src.scrapers.financial_scraper - INFO - WebDriver initialized
+2025-05-11 09:13:26,610 - src.scrapers.financial_scraper - ERROR - Error on AALI_2020: Message: 
+Stacktrace:
+#0 0x55ae0066d7fa <unknown>
+#1 0x55ae00111e90 <unknown>
+#2 0x55ae00163870 <unknown>
+#3 0x55ae00163a61 <unknown>
+#4 0x55ae001b1cb4 <unknown>
+#5 0x55ae0018926d <unknown>
+#6 0x55ae001af135 <unknown>
+#7 0x55ae00189013 <unknown>
+#8 0x55ae00155b3b <unknown>
+#9 0x55ae001567a1 <unknown>
+#10 0x55ae00632b9b <unknown>
+#11 0x55ae00636a8a <unknown>
+#12 0x55ae0061a912 <unknown>
+#13 0x55ae00637604 <unknown>
+#14 0x55ae005ff74f <unknown>
+#15 0x55ae0065b678 <unknown>
+#16 0x55ae0065b856 <unknown>
+#17 0x55ae0066c666 <unknown>
+#18 0x7f2a19991aa4 <unknown>
+#19 0x7f2a19a1ec3c <unknown>
+
+2025-05-11 09:13:26,614 - root - INFO - Saved data to /app/cache/financial_reports/financial_reports.json
+2025-05-11 09:13:56,694 - src.scrapers.financial_scraper - ERROR - Error on AALI_2021: Message: 
+Stacktrace:
+#0 0x55ae0066d7fa <unknown>
+#1 0x55ae00111e90 <unknown>
+#2 0x55ae00163870 <unknown>
+#3 0x55ae00163a61 <unknown>
+#4 0x55ae001b1cb4 <unknown>
+#5 0x55ae0018926d <unknown>
+#6 0x55ae001af135 <unknown>
+#7 0x55ae00189013 <unknown>
+#8 0x55ae00155b3b <unknown>
+#9 0x55ae001567a1 <unknown>
+#10 0x55ae00632b9b <unknown>
+#11 0x55ae00636a8a <unknown>
+#12 0x55ae0061a912 <unknown>
+#13 0x55ae00637604 <unknown>
+#14 0x55ae005ff74f <unknown>
+#15 0x55ae0065b678 <unknown>
+#16 0x55ae0065b856 <unknown>
+#17 0x55ae0066c666 <unknown>
+#18 0x7f2a19991aa4 <unknown>
+#19 0x7f2a19a1ec3c <unknown>
+
+2025-05-11 09:13:56,699 - root - INFO - Saved data to /app/cache/financial_reports/financial_reports.json

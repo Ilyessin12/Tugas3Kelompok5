@@ -1,0 +1,87 @@
+2025-05-11 10:14:57,194 - root - INFO - Logging initialized. Log file: /app/cache/error_logs/scraper_20250511_101457.log
+2025-05-11 10:14:57,196 - __main__ - INFO - Starting financial report pipeline in mode 'all'
+2025-05-11 10:14:57,197 - __main__ - INFO - Starting Financial Report scraper...
+2025-05-11 10:14:57,203 - src.scrapers.financial_scraper - INFO - Loaded 0 existing reports from /app/cache/financial_reports/financial_reports.json
+2025-05-11 10:14:57,203 - src.scrapers.financial_scraper - INFO - Already scraped 0 companies
+2025-05-11 10:14:57,204 - src.scrapers.financial_scraper - INFO - Loaded 3 emitens from /app/src/scrapers/emiten_list.json
+2025-05-11 10:14:57,204 - src.scrapers.financial_scraper - INFO - Will scrape 3 remaining companies out of 3 total
+2025-05-11 10:14:57,205 - src.scrapers.financial_scraper - INFO - Running in headless mode for Docker environment
+2025-05-11 10:14:57,205 - src.scrapers.financial_scraper - INFO - Connecting to remote WebDriver at http://chrome:4444/wd/hub
+2025-05-11 10:14:57,501 - src.scrapers.financial_scraper - INFO - WebDriver initialized successfully
+2025-05-11 10:15:08,646 - src.scrapers.financial_scraper - ERROR - ❌ Error processing AALI: Message: 
+Stacktrace:
+#0 0x5573f72707fa <unknown>
+#1 0x5573f6d14e90 <unknown>
+#2 0x5573f6d66870 <unknown>
+#3 0x5573f6d66a61 <unknown>
+#4 0x5573f6db4cb4 <unknown>
+#5 0x5573f6d8c26d <unknown>
+#6 0x5573f6db2135 <unknown>
+#7 0x5573f6d8c013 <unknown>
+#8 0x5573f6d58b3b <unknown>
+#9 0x5573f6d597a1 <unknown>
+#10 0x5573f7235b9b <unknown>
+#11 0x5573f7239a8a <unknown>
+#12 0x5573f721d912 <unknown>
+#13 0x5573f723a604 <unknown>
+#14 0x5573f720274f <unknown>
+#15 0x5573f725e678 <unknown>
+#16 0x5573f725e856 <unknown>
+#17 0x5573f726f666 <unknown>
+#18 0x7fbcc8100aa4 <unknown>
+#19 0x7fbcc818dc3c <unknown>
+
+2025-05-11 10:15:19,096 - src.scrapers.financial_scraper - ERROR - ❌ Error processing BBCA: Message: 
+Stacktrace:
+#0 0x5573f72707fa <unknown>
+#1 0x5573f6d14e90 <unknown>
+#2 0x5573f6d66870 <unknown>
+#3 0x5573f6d66a61 <unknown>
+#4 0x5573f6db4cb4 <unknown>
+#5 0x5573f6d8c26d <unknown>
+#6 0x5573f6db2135 <unknown>
+#7 0x5573f6d8c013 <unknown>
+#8 0x5573f6d58b3b <unknown>
+#9 0x5573f6d597a1 <unknown>
+#10 0x5573f7235b9b <unknown>
+#11 0x5573f7239a8a <unknown>
+#12 0x5573f721d912 <unknown>
+#13 0x5573f723a604 <unknown>
+#14 0x5573f720274f <unknown>
+#15 0x5573f725e678 <unknown>
+#16 0x5573f725e856 <unknown>
+#17 0x5573f726f666 <unknown>
+#18 0x7fbcc8100aa4 <unknown>
+#19 0x7fbcc818dc3c <unknown>
+
+2025-05-11 10:15:29,608 - src.scrapers.financial_scraper - ERROR - ❌ Error processing TLKM: Message: 
+Stacktrace:
+#0 0x5573f72707fa <unknown>
+#1 0x5573f6d14e90 <unknown>
+#2 0x5573f6d66870 <unknown>
+#3 0x5573f6d66a61 <unknown>
+#4 0x5573f6db4cb4 <unknown>
+#5 0x5573f6d8c26d <unknown>
+#6 0x5573f6db2135 <unknown>
+#7 0x5573f6d8c013 <unknown>
+#8 0x5573f6d58b3b <unknown>
+#9 0x5573f6d597a1 <unknown>
+#10 0x5573f7235b9b <unknown>
+#11 0x5573f7239a8a <unknown>
+#12 0x5573f721d912 <unknown>
+#13 0x5573f723a604 <unknown>
+#14 0x5573f720274f <unknown>
+#15 0x5573f725e678 <unknown>
+#16 0x5573f725e856 <unknown>
+#17 0x5573f726f666 <unknown>
+#18 0x7fbcc8100aa4 <unknown>
+#19 0x7fbcc818dc3c <unknown>
+
+2025-05-11 10:15:29,614 - src.scrapers.financial_scraper - INFO - 📂 Saved 0 financial reports to /app/cache/financial_reports/financial_reports.json
+2025-05-11 10:15:29,749 - src.scrapers.financial_scraper - INFO - Browser closed.
+2025-05-11 10:15:29,749 - __main__ - INFO - Financial Report scraper completed. Scraped 0 reports.
+2025-05-11 10:15:29,750 - __main__ - INFO - Starting Financial Report ingestion...
+2025-05-11 10:15:29,751 - src.ingestion.financial_ingestion - INFO - Loading data from JSON file...
+2025-05-11 10:15:29,755 - src.ingestion.financial_ingestion - WARNING - No data found in /app/cache/financial_reports/financial_reports.json
+2025-05-11 10:15:29,755 - __main__ - INFO - Financial Report ingestion completed. Inserted 0 and updated 0 reports.
+2025-05-11 10:15:29,755 - __main__ - INFO - Financial report pipeline completed successfully
