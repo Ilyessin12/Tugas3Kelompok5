@@ -47,4 +47,4 @@ for detached mode
 3. API should be accessable in an ngrok link, and the guide to how to use the API will be available when accessing the index page
 
 ### Additional Notes
-Don't forget to fill in your own **API AUTH TOKEN** in the .env, refer to .env example
+Don't forget to fill in your own **NGROK AUTH TOKEN** in the .env, refer to .env example
