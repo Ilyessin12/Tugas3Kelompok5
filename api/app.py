@@ -35,9 +35,9 @@ def index():
         },
         "examples": {
             "Stock Data": "/api/stock/AALI.JK?period=monthly",
-            "News Data": "/api/news/AALI?limit=10&skip=0",
-            "News Summary": "/api/news/summary/AALI?limit=10&skip=0",
-            "Financial Reports": "/api/financial/AALI"
+            "News Data": "/api/news/AALI.JK?limit=10&skip=0",
+            "News Summary": "/api/news/summary/AALI.JK?limit=10&skip=0",
+            "Financial Reports": "/api/financial/AALI.JK"
         }
     })
 
