@@ -1,2 +1,5 @@
 .env
 .github
+
+# ignore all pycaches
+*.pyc
