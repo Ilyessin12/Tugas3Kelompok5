@@ -9,6 +9,7 @@ services:
     # environment:
     restart: unless-stopped
     container_name: bigdata5-dashboard
+    
   # API service
   api:
     build:
@@ -20,3 +21,45 @@ services:
       - .env
     restart: unless-stopped
     container_name: bigdata5-api
+
+  # Transform service
+  transform:
+    build:
+      context: ./transformation
+      dockerfile: Dockerfile
+    volumes:
+      - ./data:/app/data
+      - ./hf_cache:/root/.cache/huggingface
+    environment:
+      - BASE_DOWNLOAD_DIR=/app/data
+      - MONGODB_CONNECTION_STRING=${MONGODB_CONNECTION_STRING}
+      - MONGODB_DATABASE_NAME=${MONGODB_DATABASE_NAME}
+      - COLLECTION_NEWS_SUMMARY_DATA=${COLLECTION_NEWS_SUMMARY_DATA}
+      - COLLECTION_FINANCIAL_REPORTS=${COLLECTION_FINANCIAL_REPORTS}
+      - NEWS_PART=5
+      - CHECKPOINT_INTERVAL=150
+      - MONGO_OUTPUT_COLLECTION=Docker_Transformasi_Laporan_Keuangan
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+    depends_on:
+      - mongodb
+    networks:
+      - app-network
+    container_name: bigdata5-api
+  
+  # Mongodb (dibutuhin transform biar bisa konek sama mmongo)
+  mongodb:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+    networks:
+      - app-network
+
+# Networks (dibutuhin sama mongo)
+networks:
+  app-network:
+    driver: bridge
+
+volumes:
+  mongo-data:
