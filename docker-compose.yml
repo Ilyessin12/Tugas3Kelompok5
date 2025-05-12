@@ -1,3 +1,5 @@
+version: '3.8'
+
 services:
   # Dashboard service
   dashboard:
@@ -55,10 +57,98 @@ services:
       - mongo-data:/data/db
     networks:
       - app-network
+      - scraper-berita-network
+      - scraper-finance-network
+
+  # Scraping Berita Service
+  berita-scraper:
+    build:
+      context: ./docker_scaping_berita
+      dockerfile: Dockerfile
+    container_name: bigdata5-scraping-berita
+    environment:
+      - PYTHONPATH=/app
+    env_file:
+      - ./docker_scaping_berita/.env
+    volumes:
+      - ./docker_scaping_berita/cache:/app/cache
+    depends_on:
+      - chrome-berita
+    networks:
+      - scraper-berita-network
+    restart: unless-stopped
+
+  # Chrome untuk Scraping Berita
+  chrome-berita:
+    image: selenium/standalone-chrome:latest
+    container_name: selenium-chrome-berita
+    ports:
+      - "4444:4444"
+    environment:
+      - SE_NODE_MAX_SESSIONS=10
+      - SE_NODE_OVERRIDE_MAX_SESSIONS=true
+    volumes:
+      - /dev/shm:/dev/shm
+    networks:
+      - scraper-berita-network
+    restart: unless-stopped
+
+  # Scraping Laporan Keuangan Service
+  finance-scraper:
+    build:
+      context: ./docker_scraping_laporan_keuangan(masih error)
+      dockerfile: Dockerfile
+    container_name: bigdata5-scraping-laporan-keuangan
+    environment:
+      - PYTHONPATH=/app
+    env_file:
+      - ./docker_scraping_laporan_keuangan(masih error)/.env
+    volumes:
+      - ./docker_scraping_laporan_keuangan(masih error)/cache:/app/cache
+    depends_on:
+      - chrome-finance
+    networks:
+      - scraper-finance-network
+    restart: unless-stopped
+
+  # Chrome untuk Scraping Laporan Keuangan
+  chrome-finance:
+    image: selenium/standalone-chrome:latest
+    container_name: selenium-chrome-finance
+    ports:
+      - "5555:4444"
+    environment:
+      - SE_NODE_MAX_SESSIONS=10
+      - SE_NODE_OVERRIDE_MAX_SESSIONS=true
+    volumes:
+      - /dev/shm:/dev/shm
+    networks:
+      - scraper-finance-network
+    restart: unless-stopped
+
+  # Scraping YFinance Service
+  yfinance-scraper:
+    build:
+      context: ./docker_scraping_yfinance
+      dockerfile: Dockerfile
+    container_name: bigdata5-scraping-yfinance
+    environment:
+      - PYTHONPATH=/app
+    env_file:
+      - ./docker_scraping_yfinance/.env
+    volumes:
+      - ./docker_scraping_yfinance/cache:/app/cache
+    restart: unless-stopped
+    networks:
+      - app-network
 
 # Networks (dibutuhin sama mongo)
 networks:
   app-network:
+    driver: bridge
+  scraper-berita-network:
+    driver: bridge
+  scraper-finance-network:
     driver: bridge
 
 volumes:
