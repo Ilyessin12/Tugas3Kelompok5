@@ -8,9 +8,9 @@ services:
       dockerfile: Dockerfile
     ports:
       - "3000:3000"
-    # environment:
     restart: unless-stopped
     container_name: bigdata5-dashboard
+<<<<<<< Updated upstream
     
   # API service
   api:
@@ -152,4 +152,3 @@ networks:
     driver: bridge
 
 volumes:
-  mongo-data:
