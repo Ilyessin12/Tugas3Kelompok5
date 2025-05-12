@@ -3,3 +3,6 @@
 
 # ignore all pycaches
 *.pyc
+
+#ignore error logs
+*.log
