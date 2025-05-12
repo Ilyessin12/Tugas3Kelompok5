@@ -6,37 +6,44 @@ from dotenv import load_dotenv
 import pymongo
 from datetime import datetime
 import time
+import google.generativeai as genai
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
-def summarize_text_with_nlpcloud(text, max_length=150):
+def summarize_text_with_gemini(text, max_length=150):
     try:
-        api_key = os.getenv("NLP_CLOUD_API_KEY")
-        url = "https://api.nlpcloud.io/v1/bart-large-cnn/summarization"
-        headers = {
-            "Authorization": f"Token {api_key}",
-            "Content-Type": "application/json"
-        }
-        data = {
-            "text": text,
-            "size": "medium"  # Options: one-sentence, small, medium, large
-        }
-        response = requests.post(url, headers=headers, json=data)
-        if response.status_code == 200:
-            summary = response.json().get("summary_text", "")
-            logger.info("Summarization completed for text: %s", text[:50])
-            return summary
-        elif response.status_code == 429:
+        # Configure Gemini API
+        api_key = os.getenv("GEMINI_API_KEY")
+        genai.configure(api_key=api_key)
+        
+        # Initialize model
+        model = genai.GenerativeModel("gemini-1.5-flash")
+        
+        # Truncate to 500,000 characters (Gemini’s token limit is ~128,000 tokens)
+        text = text[:500000]
+        
+        # Create prompt for concise summarization
+        prompt = f"Summarize the following text in a concise paragraph (max {max_length} words):\n\n{text}"
+        
+        # Generate summary
+        response = model.generate_content(prompt)
+        summary = response.text.strip()
+        
+        logger.info("Summarization completed for text: %s", text[:50])
+        return summary
+    
+    except genai.exceptions.ApiException as e:
+        if "429" in str(e):
             logger.warning("Rate limit exceeded, retrying in 20 seconds")
             time.sleep(20)
-            return summarize_text_with_nlpcloud(text, max_length)  # Retry once
-        else:
-            raise Exception(f"API request failed with status {response.status_code}: {response.text}")
+            return summarize_text_with_gemini(text, max_length)
+        logger.error("Gemini API error: %s", str(e))
+        return "Error: Could not summarize article"
     except Exception as e:
-        logger.error("Error in summarization: %s", str(e))
-        raise
+        logger.error("Unexpected error in summarization: %s", str(e))
+        return "Error: Could not summarize article"
 
 def save_checkpoint(results, part, batch_num):
     try:
@@ -52,59 +59,46 @@ def save_checkpoint(results, part, batch_num):
         logger.error("Error saving checkpoint: %s", str(e))
         raise
 
-def process_news_data_from_mongo(checkpoint_interval=150, start_from=0):
+def process_news_data_from_mongo():
     try:
-        load_dotenv()
-        mongo_connection_string = os.getenv("MONGODB_CONNECTION_STRING")
-        mongo_db_name = os.getenv("MONGODB_DATABASE_NAME")
-        mongo_collection_name = os.getenv("COLLECTION_NEWS_DATA", "Data_Berita")
+        # Connect to MongoDB
+        client = MongoClient(os.getenv("MONGODB_CONNECTION_STRING"))
+        db = client["Big_Data_kel_5"]
+        collection = db["Data_Berita"]
+        output_collection = db["Docker_Transformasi_Berita"]
         
-        logger.info("Connecting to MongoDB: %s, Collection: %s", mongo_db_name, mongo_collection_name)
-        client = pymongo.MongoClient(mongo_connection_string)
-        db = client[mongo_db_name]
-        collection = db[mongo_collection_name]
+        logger.info("Connecting to MongoDB: %s, Collection: %s", "Big_Data_kel_5", "Data_Berita")
         
-        news_data = list(collection.find())[:1]
-        total_items = len(news_data)
-        logger.info("Processing %d news items from MongoDB", total_items)
+        # Fetch news data
+        news_data = list(collection.find())
+        logger.info("Processing %d news items from MongoDB", len(news_data))
         
-        results = []
-        batch_num = 1
-        items_in_current_batch = 0
-        
-        for idx, item in enumerate(news_data[start_from:], start=start_from):
-            news_item = {
-                "Emiten": item.get("Emiten", ""),
-                "Date": item.get("Date", ""),
-                "Judul": item.get("Title", ""),
-                "Link": item.get("Link", ""),
-                "content": item.get("Content", "")
-            }
-            
-            if news_item["content"]:
+        processed_data = []
+        for news_item in news_data:
+            if news_item.get("content"):
                 full_text = f"{news_item['Judul']} {news_item['content']}"
-                summary = summarize_text_with_nlpcloud(full_text)
+                summary = summarize_text_with_gemini(full_text)
                 news_item["Ringkasan"] = summary
-            else:
-                news_item["Ringkasan"] = "Tidak ada konten berita untuk diringkas."
+                processed_data.append(news_item)
             
-            del news_item["content"]
-            results.append(news_item)
-            items_in_current_batch += 1
-            
-            if items_in_current_batch >= checkpoint_interval:
-                save_checkpoint(results, "mongo", batch_num)
-                batch_num += 1
-                items_in_current_batch = 0
+            # Save checkpoint every 100 articles
+            if len(processed_data) >= 100:
+                output_collection.insert_many(processed_data)
+                logger.info("Checkpoint: Uploaded %d documents to MongoDB", len(processed_data))
+                processed_data = []
         
-        if items_in_current_batch > 0:
-            save_checkpoint(results, "mongo", batch_num)
+        # Save remaining data
+        if processed_data:
+            output_collection.insert_many(processed_data)
+            logger.info("Final: Uploaded %d documents to MongoDB", len(processed_data))
         
-        logger.info("Processed %d news items", len(results))
-        return results
+        logger.info("Successfully uploaded %d documents to MongoDB", len(news_data))
+    
     except Exception as e:
-        logger.error("Error processing news from MongoDB: %s", str(e))
-        return []
+        logger.error("Error processing news data: %s", str(e))
+        raise
+    finally:
+        client.close()
 
 def upload_to_mongodb(data, replace_existing=False):
     try:
