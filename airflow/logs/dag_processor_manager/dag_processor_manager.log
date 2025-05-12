@@ -1,0 +1,1568 @@
+[2025-05-12T06:45:19.391+0000] {manager.py:487} INFO - Processing files using up to 2 processes at a time 
+[2025-05-12T06:45:19.392+0000] {manager.py:488} INFO - Process each file at most once every 30 seconds
+[2025-05-12T06:45:19.396+0000] {manager.py:489} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2025-05-12T06:45:19.399+0000] {manager.py:759} INFO - Searching for files in /opt/airflow/dags
+[2025-05-12T06:45:19.428+0000] {manager.py:762} INFO - There are 5 files in /opt/airflow/dags
+[2025-05-12T06:45:20.751+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/transformation_dag.py        28  0.22s             0           0
+/opt/airflow/dags/financial_report_dag.py      29  0.18s             0           0
+/opt/airflow/dags/yfinance_scraping_dag.py                           0           0
+/opt/airflow/dags/master_pipeline_dag.py                             0           0
+/opt/airflow/dags/news_scraping_dag.py                               0           0
+================================================================================
+[2025-05-12T06:45:51.750+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py                              1           0  1.49s           2025-05-12T06:45:22
+/opt/airflow/dags/financial_report_dag.py                            1           0  1.51s           2025-05-12T06:45:22
+/opt/airflow/dags/yfinance_scraping_dag.py                           1           0  0.65s           2025-05-12T06:45:22
+/opt/airflow/dags/master_pipeline_dag.py                             1           0  0.73s           2025-05-12T06:45:22
+/opt/airflow/dags/news_scraping_dag.py                               1           0  0.54s           2025-05-12T06:45:23
+================================================================================
+[2025-05-12T06:46:22.404+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py                              1           0  0.86s           2025-05-12T06:45:53
+/opt/airflow/dags/financial_report_dag.py                            1           0  0.87s           2025-05-12T06:45:53
+/opt/airflow/dags/yfinance_scraping_dag.py                           1           0  0.30s           2025-05-12T06:45:53
+/opt/airflow/dags/master_pipeline_dag.py                             1           0  0.36s           2025-05-12T06:45:54
+/opt/airflow/dags/news_scraping_dag.py                               1           0  0.24s           2025-05-12T06:45:54
+================================================================================
+[2025-05-12T06:46:33.322+0000] {manager.py:469} INFO - Exiting gracefully upon receiving signal 15
+[2025-05-12T06:49:50.687+0000] {manager.py:487} INFO - Processing files using up to 2 processes at a time 
+[2025-05-12T06:49:50.693+0000] {manager.py:488} INFO - Process each file at most once every 30 seconds
+[2025-05-12T06:49:50.696+0000] {manager.py:489} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2025-05-12T06:49:50.699+0000] {manager.py:759} INFO - Searching for files in /opt/airflow/dags
+[2025-05-12T06:49:50.786+0000] {manager.py:762} INFO - There are 5 files in /opt/airflow/dags
+[2025-05-12T06:49:52.190+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/transformation_dag.py        29  0.12s             0           0
+/opt/airflow/dags/financial_report_dag.py      30  0.10s             0           0
+/opt/airflow/dags/yfinance_scraping_dag.py                           0           0
+/opt/airflow/dags/master_pipeline_dag.py                             0           0
+/opt/airflow/dags/news_scraping_dag.py                               0           0
+================================================================================
+[2025-05-12T06:50:22.546+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py        34  0.01s             1           0  0.38s           2025-05-12T06:49:52
+/opt/airflow/dags/financial_report_dag.py                            1           0  0.38s           2025-05-12T06:49:52
+/opt/airflow/dags/yfinance_scraping_dag.py                           1           0  0.17s           2025-05-12T06:49:52
+/opt/airflow/dags/master_pipeline_dag.py                             1           0  0.25s           2025-05-12T06:49:52
+/opt/airflow/dags/news_scraping_dag.py                               1           0  0.21s           2025-05-12T06:49:52
+================================================================================
+[2025-05-12T06:50:52.888+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py                              1           0  1.43s           2025-05-12T06:50:23
+/opt/airflow/dags/financial_report_dag.py                            1           0  1.38s           2025-05-12T06:50:23
+/opt/airflow/dags/yfinance_scraping_dag.py                           1           0  0.18s           2025-05-12T06:50:24
+/opt/airflow/dags/master_pipeline_dag.py                             1           0  0.56s           2025-05-12T06:50:24
+/opt/airflow/dags/news_scraping_dag.py                               1           0  0.38s           2025-05-12T06:50:24
+================================================================================
+[2025-05-12T06:51:35.332+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py        39  40.55s            1           0  1.43s           2025-05-12T06:50:23
+/opt/airflow/dags/financial_report_dag.py      40  40.51s            1           0  1.38s           2025-05-12T06:50:23
+/opt/airflow/dags/yfinance_scraping_dag.py                           1           0  0.18s           2025-05-12T06:50:24
+/opt/airflow/dags/master_pipeline_dag.py                             1           0  0.56s           2025-05-12T06:50:24
+/opt/airflow/dags/news_scraping_dag.py                               1           0  0.38s           2025-05-12T06:50:24
+================================================================================
+[2025-05-12T06:52:41.489+0000] {manager.py:1217} ERROR - Processor for /opt/airflow/dags/transformation_dag.py with PID 39 started at 2025-05-12T06:50:54.014130+00:00 has timed out, killing it.
+[2025-05-12T06:52:41.944+0000] {manager.py:1217} ERROR - Processor for /opt/airflow/dags/financial_report_dag.py with PID 40 started at 2025-05-12T06:50:54.061043+00:00 has timed out, killing it.
+[2025-05-12T06:52:43.024+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py                              0           1  103.25s         2025-05-12T06:52:37
+/opt/airflow/dags/financial_report_dag.py                            0           1  103.20s         2025-05-12T06:52:37
+/opt/airflow/dags/yfinance_scraping_dag.py     41  0.83s             1           0  0.18s           2025-05-12T06:50:24
+/opt/airflow/dags/master_pipeline_dag.py       42  0.11s             1           0  0.56s           2025-05-12T06:50:24
+/opt/airflow/dags/news_scraping_dag.py                               1           0  0.38s           2025-05-12T06:50:24
+================================================================================
+[2025-05-12T06:53:14.159+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py                              1           0  1.24s           2025-05-12T06:53:08
+/opt/airflow/dags/financial_report_dag.py                            1           0  1.23s           2025-05-12T06:53:08
+/opt/airflow/dags/yfinance_scraping_dag.py                           1           0  4.30s           2025-05-12T06:52:46
+/opt/airflow/dags/master_pipeline_dag.py                             1           0  3.56s           2025-05-12T06:52:46
+/opt/airflow/dags/news_scraping_dag.py                               1           0  0.26s           2025-05-12T06:52:46
+================================================================================
+[2025-05-12T06:53:44.513+0000] {manager.py:469} INFO - Exiting gracefully upon receiving signal 15
+[2025-05-12T07:03:19.759+0000] {manager.py:487} INFO - Processing files using up to 2 processes at a time 
+[2025-05-12T07:03:19.765+0000] {manager.py:488} INFO - Process each file at most once every 30 seconds
+[2025-05-12T07:03:19.769+0000] {manager.py:489} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2025-05-12T07:03:19.770+0000] {manager.py:759} INFO - Searching for files in /opt/airflow/dags
+[2025-05-12T07:03:19.830+0000] {manager.py:762} INFO - There are 5 files in /opt/airflow/dags
+[2025-05-12T07:03:21.273+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/transformation_dag.py        28  0.23s             0           0
+/opt/airflow/dags/financial_report_dag.py      29  0.16s             0           0
+/opt/airflow/dags/yfinance_scraping_dag.py                           0           0
+/opt/airflow/dags/master_pipeline_dag.py                             0           0
+/opt/airflow/dags/news_scraping_dag.py                               0           0
+================================================================================
+[2025-05-12T07:03:52.174+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py                              1           0  0.87s           2025-05-12T07:03:21
+/opt/airflow/dags/financial_report_dag.py      33  0.03s             1           0  0.76s           2025-05-12T07:03:21
+/opt/airflow/dags/yfinance_scraping_dag.py                           1           0  0.29s           2025-05-12T07:03:22
+/opt/airflow/dags/master_pipeline_dag.py                             1           0  0.48s           2025-05-12T07:03:22
+/opt/airflow/dags/news_scraping_dag.py                               1           0  0.43s           2025-05-12T07:03:22
+================================================================================
+[2025-05-12T07:04:22.896+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py                              1           0  1.77s           2025-05-12T07:03:54
+/opt/airflow/dags/financial_report_dag.py                            1           0  1.95s           2025-05-12T07:03:53
+/opt/airflow/dags/yfinance_scraping_dag.py                           1           0  0.24s           2025-05-12T07:03:54
+/opt/airflow/dags/master_pipeline_dag.py                             1           0  0.51s           2025-05-12T07:03:54
+/opt/airflow/dags/news_scraping_dag.py                               1           0  0.40s           2025-05-12T07:03:54
+================================================================================
+[2025-05-12T07:04:53.750+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py                              1           0  0.30s           2025-05-12T07:04:25
+/opt/airflow/dags/financial_report_dag.py                            1           0  0.30s           2025-05-12T07:04:25
+/opt/airflow/dags/yfinance_scraping_dag.py                           1           0  0.16s           2025-05-12T07:04:25
+/opt/airflow/dags/master_pipeline_dag.py                             1           0  0.35s           2025-05-12T07:04:25
+/opt/airflow/dags/news_scraping_dag.py                               1           0  0.35s           2025-05-12T07:04:25
+================================================================================
+[2025-05-12T07:06:01.898+0000] {manager.py:1217} ERROR - Processor for /opt/airflow/dags/transformation_dag.py with PID 43 started at 2025-05-12T07:04:56.380058+00:00 has timed out, killing it.
+[2025-05-12T07:06:05.724+0000] {manager.py:1217} ERROR - Processor for /opt/airflow/dags/financial_report_dag.py with PID 44 started at 2025-05-12T07:04:56.561567+00:00 has timed out, killing it.
+[2025-05-12T07:06:05.857+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py                              0           1  65.51s          2025-05-12T07:06:01
+/opt/airflow/dags/financial_report_dag.py                            0           1  65.33s          2025-05-12T07:06:01
+/opt/airflow/dags/yfinance_scraping_dag.py     45  0.06s             1           0  0.16s           2025-05-12T07:04:25
+/opt/airflow/dags/master_pipeline_dag.py       46  0.02s             1           0  0.35s           2025-05-12T07:04:25
+/opt/airflow/dags/news_scraping_dag.py                               1           0  0.35s           2025-05-12T07:04:25
+================================================================================
+[2025-05-12T07:07:55.283+0000] {manager.py:1217} ERROR - Processor for /opt/airflow/dags/yfinance_scraping_dag.py with PID 45 started at 2025-05-12T07:06:05.781202+00:00 has timed out, killing it.
+[2025-05-12T07:07:55.525+0000] {manager.py:1217} ERROR - Processor for /opt/airflow/dags/master_pipeline_dag.py with PID 46 started at 2025-05-12T07:06:05.821949+00:00 has timed out, killing it.
+[2025-05-12T07:07:55.846+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py                              0           1  65.51s          2025-05-12T07:06:01
+/opt/airflow/dags/financial_report_dag.py                            0           1  65.33s          2025-05-12T07:06:01
+/opt/airflow/dags/yfinance_scraping_dag.py                           0           1  109.47s         2025-05-12T07:07:55
+/opt/airflow/dags/master_pipeline_dag.py                             0           1  109.43s         2025-05-12T07:07:55
+/opt/airflow/dags/news_scraping_dag.py         47  0.07s             1           0  0.35s           2025-05-12T07:04:25
+================================================================================
+[2025-05-12T07:09:40.112+0000] {manager.py:759} INFO - Searching for files in /opt/airflow/dags
+[2025-05-12T07:09:40.715+0000] {manager.py:762} INFO - There are 5 files in /opt/airflow/dags
+[2025-05-12T07:09:40.983+0000] {manager.py:1217} ERROR - Processor for /opt/airflow/dags/news_scraping_dag.py with PID 47 started at 2025-05-12T07:07:55.667669+00:00 has timed out, killing it.
+[2025-05-12T07:09:40.997+0000] {manager.py:1217} ERROR - Processor for /opt/airflow/dags/transformation_dag.py with PID 48 started at 2025-05-12T07:07:56.040739+00:00 has timed out, killing it.
+[2025-05-12T07:09:41.045+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py                              0           1  104.94s         2025-05-12T07:09:40
+/opt/airflow/dags/financial_report_dag.py      49  0.02s             0           1  65.33s          2025-05-12T07:06:01
+/opt/airflow/dags/yfinance_scraping_dag.py                           0           1  109.47s         2025-05-12T07:07:55
+/opt/airflow/dags/master_pipeline_dag.py                             0           1  109.43s         2025-05-12T07:07:55
+/opt/airflow/dags/news_scraping_dag.py                               0           1  105.32s         2025-05-12T07:09:40
+================================================================================
+[2025-05-12T07:10:16.831+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py                              1           0  0.36s           2025-05-12T07:10:15
+/opt/airflow/dags/financial_report_dag.py                            1           0  0.20s           2025-05-12T07:10:15
+/opt/airflow/dags/yfinance_scraping_dag.py                           1           0  0.19s           2025-05-12T07:10:00
+/opt/airflow/dags/master_pipeline_dag.py                             1           0  0.16s           2025-05-12T07:10:15
+/opt/airflow/dags/news_scraping_dag.py                               1           0  0.32s           2025-05-12T07:10:16
+================================================================================
+[2025-05-12T07:10:47.301+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py                              1           0  0.14s           2025-05-12T07:10:46
+/opt/airflow/dags/financial_report_dag.py                            1           0  0.15s           2025-05-12T07:10:46
+/opt/airflow/dags/yfinance_scraping_dag.py                           1           0  0.11s           2025-05-12T07:10:31
+/opt/airflow/dags/master_pipeline_dag.py                             1           0  0.16s           2025-05-12T07:10:46
+/opt/airflow/dags/news_scraping_dag.py                               1           0  0.14s           2025-05-12T07:10:46
+================================================================================
+[2025-05-12T07:11:00.543+0000] {manager.py:469} INFO - Exiting gracefully upon receiving signal 15
+[2025-05-12T07:11:44.420+0000] {manager.py:487} INFO - Processing files using up to 2 processes at a time 
+[2025-05-12T07:11:44.421+0000] {manager.py:488} INFO - Process each file at most once every 30 seconds
+[2025-05-12T07:11:44.422+0000] {manager.py:489} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2025-05-12T07:11:44.423+0000] {manager.py:759} INFO - Searching for files in /opt/airflow/dags
+[2025-05-12T07:11:44.455+0000] {manager.py:762} INFO - There are 5 files in /opt/airflow/dags
+[2025-05-12T07:11:44.974+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/transformation_dag.py        30  0.19s             0           0
+/opt/airflow/dags/financial_report_dag.py      31  0.18s             0           0
+/opt/airflow/dags/yfinance_scraping_dag.py                           0           0
+/opt/airflow/dags/master_pipeline_dag.py                             0           0
+/opt/airflow/dags/news_scraping_dag.py                               0           0
+================================================================================
+[2025-05-12T07:12:15.905+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py        35  0.03s             1           0  0.44s           2025-05-12T07:11:45
+/opt/airflow/dags/financial_report_dag.py      36  0.01s             1           0  0.45s           2025-05-12T07:11:45
+/opt/airflow/dags/yfinance_scraping_dag.py                           1           0  0.30s           2025-05-12T07:11:45
+/opt/airflow/dags/master_pipeline_dag.py                             1           0  0.30s           2025-05-12T07:11:45
+/opt/airflow/dags/news_scraping_dag.py                               1           0  0.26s           2025-05-12T07:11:45
+================================================================================
+[2025-05-12T07:12:50.079+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py                              1           0  19.70s          2025-05-12T07:12:35
+/opt/airflow/dags/financial_report_dag.py                            1           0  19.69s          2025-05-12T07:12:35
+/opt/airflow/dags/yfinance_scraping_dag.py                           1           0  1.36s           2025-05-12T07:12:36
+/opt/airflow/dags/master_pipeline_dag.py                             1           0  1.25s           2025-05-12T07:12:37
+/opt/airflow/dags/news_scraping_dag.py                               1           0  0.28s           2025-05-12T07:12:37
+================================================================================
+[2025-05-12T07:13:29.930+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py        40  23.48s            1           0  19.70s          2025-05-12T07:12:35
+/opt/airflow/dags/financial_report_dag.py      41  5.01s             1           0  19.69s          2025-05-12T07:12:35
+/opt/airflow/dags/yfinance_scraping_dag.py                           1           0  1.36s           2025-05-12T07:12:36
+/opt/airflow/dags/master_pipeline_dag.py                             1           0  1.25s           2025-05-12T07:12:37
+/opt/airflow/dags/news_scraping_dag.py                               1           0  0.28s           2025-05-12T07:12:37
+================================================================================
+[2025-05-12T07:15:11.406+0000] {manager.py:1217} ERROR - Processor for /opt/airflow/dags/transformation_dag.py with PID 40 started at 2025-05-12T07:13:06.134294+00:00 has timed out, killing it.
+[2025-05-12T07:15:12.311+0000] {manager.py:1217} ERROR - Processor for /opt/airflow/dags/financial_report_dag.py with PID 41 started at 2025-05-12T07:13:24.608562+00:00 has timed out, killing it.
+[2025-05-12T07:15:13.062+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py                              0           1  125.26s         2025-05-12T07:15:11
+/opt/airflow/dags/financial_report_dag.py                            0           1  106.79s         2025-05-12T07:15:11
+/opt/airflow/dags/yfinance_scraping_dag.py     42  0.17s             1           0  1.36s           2025-05-12T07:12:36
+/opt/airflow/dags/master_pipeline_dag.py       43  0.06s             1           0  1.25s           2025-05-12T07:12:37
+/opt/airflow/dags/news_scraping_dag.py                               1           0  0.28s           2025-05-12T07:12:37
+================================================================================
+[2025-05-12T07:15:24.347+0000] {manager.py:469} INFO - Exiting gracefully upon receiving signal 15
+[2025-05-12T07:15:25.462+0000] {manager.py:469} INFO - Exiting gracefully upon receiving signal 15
+[2025-05-12T07:17:44.120+0000] {manager.py:487} INFO - Processing files using up to 2 processes at a time 
+[2025-05-12T07:17:44.129+0000] {manager.py:488} INFO - Process each file at most once every 30 seconds
+[2025-05-12T07:17:44.134+0000] {manager.py:489} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2025-05-12T07:17:44.135+0000] {manager.py:759} INFO - Searching for files in /opt/airflow/dags
+[2025-05-12T07:17:44.156+0000] {manager.py:762} INFO - There are 5 files in /opt/airflow/dags
+[2025-05-12T07:17:45.364+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/transformation_dag.py        28  0.15s             0           0
+/opt/airflow/dags/financial_report_dag.py      29  0.14s             0           0
+/opt/airflow/dags/yfinance_scraping_dag.py                           0           0
+/opt/airflow/dags/master_pipeline_dag.py                             0           0
+/opt/airflow/dags/news_scraping_dag.py                               0           0
+================================================================================
+[2025-05-12T07:18:15.877+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py                              1           0  1.18s           2025-05-12T07:17:46
+/opt/airflow/dags/financial_report_dag.py                            1           0  1.22s           2025-05-12T07:17:46
+/opt/airflow/dags/yfinance_scraping_dag.py                           1           0  0.75s           2025-05-12T07:17:47
+/opt/airflow/dags/master_pipeline_dag.py                             1           0  0.74s           2025-05-12T07:17:47
+/opt/airflow/dags/news_scraping_dag.py                               1           0  0.22s           2025-05-12T07:17:47
+================================================================================
+[2025-05-12T07:19:12.988+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py        38  4.65s             1           0  0.74s           2025-05-12T07:18:17
+/opt/airflow/dags/financial_report_dag.py      39  0.09s             1           0  0.72s           2025-05-12T07:18:17
+/opt/airflow/dags/yfinance_scraping_dag.py                           1           0  0.18s           2025-05-12T07:18:17
+/opt/airflow/dags/master_pipeline_dag.py                             1           0  0.27s           2025-05-12T07:18:18
+/opt/airflow/dags/news_scraping_dag.py                               1           0  0.23s           2025-05-12T07:18:18
+================================================================================
+[2025-05-12T07:20:32.011+0000] {manager.py:1217} ERROR - Processor for /opt/airflow/dags/transformation_dag.py with PID 38 started at 2025-05-12T07:19:08.153563+00:00 has timed out, killing it.
+[2025-05-12T07:20:32.500+0000] {manager.py:1217} ERROR - Processor for /opt/airflow/dags/financial_report_dag.py with PID 39 started at 2025-05-12T07:19:12.706038+00:00 has timed out, killing it.
+[2025-05-12T07:20:33.090+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py                              0           1  82.88s          2025-05-12T07:20:31
+/opt/airflow/dags/financial_report_dag.py                            0           1  78.32s          2025-05-12T07:20:31
+/opt/airflow/dags/yfinance_scraping_dag.py     40  0.08s             1           0  0.18s           2025-05-12T07:18:17
+/opt/airflow/dags/master_pipeline_dag.py       41  0.02s             1           0  0.27s           2025-05-12T07:18:18
+/opt/airflow/dags/news_scraping_dag.py                               1           0  0.23s           2025-05-12T07:18:18
+================================================================================
+[2025-05-12T07:20:43.113+0000] {manager.py:469} INFO - Exiting gracefully upon receiving signal 15
+[2025-05-12T07:25:44.100+0000] {manager.py:487} INFO - Processing files using up to 2 processes at a time 
+[2025-05-12T07:25:44.101+0000] {manager.py:488} INFO - Process each file at most once every 30 seconds
+[2025-05-12T07:25:44.102+0000] {manager.py:489} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2025-05-12T07:25:44.103+0000] {manager.py:759} INFO - Searching for files in /opt/airflow/dags
+[2025-05-12T07:25:44.127+0000] {manager.py:762} INFO - There are 5 files in /opt/airflow/dags
+[2025-05-12T07:25:44.496+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/transformation_dag.py        29  0.10s             0           0
+/opt/airflow/dags/financial_report_dag.py      30  0.09s             0           0
+/opt/airflow/dags/yfinance_scraping_dag.py                           0           0
+/opt/airflow/dags/master_pipeline_dag.py                             0           0
+/opt/airflow/dags/news_scraping_dag.py                               0           0
+================================================================================
+[2025-05-12T07:26:15.445+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py        34  0.01s             1           0  0.29s           2025-05-12T07:25:44
+/opt/airflow/dags/financial_report_dag.py      35  0.00s             1           0  0.29s           2025-05-12T07:25:44
+/opt/airflow/dags/yfinance_scraping_dag.py                           1           0  0.24s           2025-05-12T07:25:44
+/opt/airflow/dags/master_pipeline_dag.py                             1           0  0.26s           2025-05-12T07:25:45
+/opt/airflow/dags/news_scraping_dag.py                               1           0  0.24s           2025-05-12T07:25:45
+================================================================================
+[2025-05-12T07:26:46.454+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py        39  0.01s             1           0  0.58s           2025-05-12T07:26:16
+/opt/airflow/dags/financial_report_dag.py      40  0.01s             1           0  0.56s           2025-05-12T07:26:15
+/opt/airflow/dags/yfinance_scraping_dag.py                           1           0  0.12s           2025-05-12T07:26:16
+/opt/airflow/dags/master_pipeline_dag.py                             1           0  0.19s           2025-05-12T07:26:16
+/opt/airflow/dags/news_scraping_dag.py                               1           0  0.15s           2025-05-12T07:26:16
+================================================================================
+[2025-05-12T07:27:17.452+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py        44  0.05s             1           0  0.19s           2025-05-12T07:26:46
+/opt/airflow/dags/financial_report_dag.py      45  0.01s             1           0  0.20s           2025-05-12T07:26:46
+/opt/airflow/dags/yfinance_scraping_dag.py                           1           0  0.13s           2025-05-12T07:26:46
+/opt/airflow/dags/master_pipeline_dag.py                             1           0  0.28s           2025-05-12T07:26:47
+/opt/airflow/dags/news_scraping_dag.py                               1           0  0.26s           2025-05-12T07:26:47
+================================================================================
+[2025-05-12T07:27:47.891+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py                              1           0  15.42s          2025-05-12T07:27:32
+/opt/airflow/dags/financial_report_dag.py                            1           0  15.40s          2025-05-12T07:27:32
+/opt/airflow/dags/yfinance_scraping_dag.py                           1           0  0.19s           2025-05-12T07:27:33
+/opt/airflow/dags/master_pipeline_dag.py                             1           0  0.27s           2025-05-12T07:27:33
+/opt/airflow/dags/news_scraping_dag.py                               1           0  0.23s           2025-05-12T07:27:33
+================================================================================
+[2025-05-12T07:28:27.568+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py        49  24.68s            1           0  15.42s          2025-05-12T07:27:32
+/opt/airflow/dags/financial_report_dag.py      50  24.65s            1           0  15.40s          2025-05-12T07:27:32
+/opt/airflow/dags/yfinance_scraping_dag.py                           1           0  0.19s           2025-05-12T07:27:33
+/opt/airflow/dags/master_pipeline_dag.py                             1           0  0.27s           2025-05-12T07:27:33
+/opt/airflow/dags/news_scraping_dag.py                               1           0  0.23s           2025-05-12T07:27:33
+================================================================================
+[2025-05-12T07:28:30.030+0000] {manager.py:469} INFO - Exiting gracefully upon receiving signal 15
+[2025-05-12T07:39:15.656+0000] {manager.py:487} INFO - Processing files using up to 2 processes at a time 
+[2025-05-12T07:39:15.662+0000] {manager.py:488} INFO - Process each file at most once every 30 seconds
+[2025-05-12T07:39:15.663+0000] {manager.py:489} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2025-05-12T07:39:15.663+0000] {manager.py:759} INFO - Searching for files in /opt/airflow/dags
+[2025-05-12T07:39:15.692+0000] {manager.py:762} INFO - There are 5 files in /opt/airflow/dags
+[2025-05-12T07:39:16.290+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/transformation_dag.py        29  0.08s             0           0
+/opt/airflow/dags/financial_report_dag.py                            0           0
+/opt/airflow/dags/yfinance_scraping_dag.py                           0           0
+/opt/airflow/dags/master_pipeline_dag.py       28  0.44s             0           0
+/opt/airflow/dags/news_scraping_dag.py                               0           0
+================================================================================
+[2025-05-12T07:40:01.385+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py        34  0.06s             1           0  0.58s           2025-05-12T07:39:16
+/opt/airflow/dags/financial_report_dag.py                            1           0  0.65s           2025-05-12T07:39:17
+/opt/airflow/dags/yfinance_scraping_dag.py                           1           0  0.69s           2025-05-12T07:39:17
+/opt/airflow/dags/master_pipeline_dag.py       33  7.44s             1           0  0.65s           2025-05-12T07:39:16
+/opt/airflow/dags/news_scraping_dag.py                               1           0  0.67s           2025-05-12T07:39:17
+================================================================================
+[2025-05-12T07:40:36.435+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py        34  35.08s            1           0  0.58s           2025-05-12T07:39:16
+/opt/airflow/dags/financial_report_dag.py                            1           0  0.65s           2025-05-12T07:39:17
+/opt/airflow/dags/yfinance_scraping_dag.py                           1           0  0.69s           2025-05-12T07:39:17
+/opt/airflow/dags/master_pipeline_dag.py       33  42.46s            1           0  0.65s           2025-05-12T07:39:16
+/opt/airflow/dags/news_scraping_dag.py                               1           0  0.67s           2025-05-12T07:39:17
+================================================================================
+[2025-05-12T07:40:44.030+0000] {manager.py:1217} ERROR - Processor for /opt/airflow/dags/master_pipeline_dag.py with PID 33 started at 2025-05-12T07:39:53.751906+00:00 has timed out, killing it.
+[2025-05-12T07:40:51.661+0000] {manager.py:1217} ERROR - Processor for /opt/airflow/dags/transformation_dag.py with PID 34 started at 2025-05-12T07:40:01.130354+00:00 has timed out, killing it.
+[2025-05-12T07:42:31.958+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py                              0           1  50.53s          2025-05-12T07:40:51
+/opt/airflow/dags/master_pipeline_dag.py                             0           1  50.24s          2025-05-12T07:40:43
+/opt/airflow/dags/financial_report_dag.py                            1           0  0.65s           2025-05-12T07:39:17
+/opt/airflow/dags/yfinance_scraping_dag.py     35  48.46s            1           0  0.69s           2025-05-12T07:39:17
+/opt/airflow/dags/news_scraping_dag.py         36  41.64s            1           0  0.67s           2025-05-12T07:39:17
+================================================================================
+[2025-05-12T07:42:35.422+0000] {manager.py:1217} ERROR - Processor for /opt/airflow/dags/yfinance_scraping_dag.py with PID 35 started at 2025-05-12T07:40:45.053951+00:00 has timed out, killing it.
+[2025-05-12T07:42:35.514+0000] {manager.py:1217} ERROR - Processor for /opt/airflow/dags/news_scraping_dag.py with PID 36 started at 2025-05-12T07:40:51.870079+00:00 has timed out, killing it.
+[2025-05-12T07:43:14.112+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py                              0           1  50.53s          2025-05-12T07:40:51
+/opt/airflow/dags/yfinance_scraping_dag.py                           0           1  110.37s         2025-05-12T07:42:35
+/opt/airflow/dags/master_pipeline_dag.py       38  38.27s            0           1  50.24s          2025-05-12T07:40:43
+/opt/airflow/dags/news_scraping_dag.py                               0           1  103.55s         2025-05-12T07:42:35
+/opt/airflow/dags/financial_report_dag.py      37  38.44s            1           0  0.65s           2025-05-12T07:39:17
+================================================================================
+[2025-05-12T07:43:21.893+0000] {manager.py:469} INFO - Exiting gracefully upon receiving signal 15
+[2025-05-12T07:51:59.522+0000] {manager.py:487} INFO - Processing files using up to 2 processes at a time 
+[2025-05-12T07:51:59.524+0000] {manager.py:488} INFO - Process each file at most once every 30 seconds
+[2025-05-12T07:51:59.532+0000] {manager.py:489} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2025-05-12T07:51:59.533+0000] {manager.py:759} INFO - Searching for files in /opt/airflow/dags
+[2025-05-12T07:51:59.569+0000] {manager.py:762} INFO - There are 5 files in /opt/airflow/dags
+[2025-05-12T07:52:00.433+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py        30  0.17s             0           0
+/opt/airflow/dags/financial_report_dag.py                            0           0
+/opt/airflow/dags/yfinance_scraping_dag.py     31  0.01s             0           0
+/opt/airflow/dags/news_scraping_dag.py                               0           0
+/opt/airflow/dags/master_pipeline_dag.py                             1           0  0.53s           2025-05-12T07:52:00
+================================================================================
+[2025-05-12T07:52:31.304+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py        35  0.01s             1           0  0.42s           2025-05-12T07:52:00
+/opt/airflow/dags/financial_report_dag.py                            1           0  0.36s           2025-05-12T07:52:01
+/opt/airflow/dags/yfinance_scraping_dag.py     36  0.00s             1           0  0.32s           2025-05-12T07:52:00
+/opt/airflow/dags/master_pipeline_dag.py                             1           0  0.14s           2025-05-12T07:52:30
+/opt/airflow/dags/news_scraping_dag.py                               1           0  0.39s           2025-05-12T07:52:01
+================================================================================
+[2025-05-12T07:53:01.607+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py        41  0.03s             1           0  0.13s           2025-05-12T07:52:31
+/opt/airflow/dags/financial_report_dag.py                            1           0  0.12s           2025-05-12T07:52:31
+/opt/airflow/dags/yfinance_scraping_dag.py                           1           0  0.49s           2025-05-12T07:53:00
+/opt/airflow/dags/master_pipeline_dag.py                             1           0  0.30s           2025-05-12T07:53:00
+/opt/airflow/dags/news_scraping_dag.py         42  0.01s             1           0  0.13s           2025-05-12T07:52:31
+================================================================================
+[2025-05-12T07:53:32.468+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py        46  0.02s             1           0  0.35s           2025-05-12T07:53:01
+/opt/airflow/dags/financial_report_dag.py                            1           0  0.23s           2025-05-12T07:53:02
+/opt/airflow/dags/yfinance_scraping_dag.py                           1           0  0.28s           2025-05-12T07:53:31
+/opt/airflow/dags/master_pipeline_dag.py                             1           0  0.31s           2025-05-12T07:53:31
+/opt/airflow/dags/news_scraping_dag.py         47  0.01s             1           0  0.36s           2025-05-12T07:53:01
+================================================================================
+[2025-05-12T07:54:03.009+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py        51  0.01s             1           0  0.21s           2025-05-12T07:53:32
+/opt/airflow/dags/financial_report_dag.py                            1           0  0.25s           2025-05-12T07:53:32
+/opt/airflow/dags/yfinance_scraping_dag.py                           1           0  0.17s           2025-05-12T07:54:01
+/opt/airflow/dags/master_pipeline_dag.py                             1           0  0.17s           2025-05-12T07:54:01
+/opt/airflow/dags/news_scraping_dag.py         52  0.00s             1           0  0.21s           2025-05-12T07:53:32
+================================================================================
+[2025-05-12T07:54:33.465+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py        56  0.01s             1           0  0.16s           2025-05-12T07:54:03
+/opt/airflow/dags/financial_report_dag.py                            1           0  0.12s           2025-05-12T07:54:03
+/opt/airflow/dags/yfinance_scraping_dag.py                           1           0  0.14s           2025-05-12T07:54:32
+/opt/airflow/dags/master_pipeline_dag.py                             1           0  0.15s           2025-05-12T07:54:32
+/opt/airflow/dags/news_scraping_dag.py         57  0.00s             1           0  0.16s           2025-05-12T07:54:03
+================================================================================
+[2025-05-12T07:55:03.936+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py        61  0.01s             1           0  0.17s           2025-05-12T07:54:33
+/opt/airflow/dags/financial_report_dag.py                            1           0  0.13s           2025-05-12T07:54:33
+/opt/airflow/dags/yfinance_scraping_dag.py                           1           0  0.14s           2025-05-12T07:55:02
+/opt/airflow/dags/master_pipeline_dag.py                             1           0  0.15s           2025-05-12T07:55:02
+/opt/airflow/dags/news_scraping_dag.py         62  0.00s             1           0  0.15s           2025-05-12T07:54:33
+================================================================================
+[2025-05-12T07:55:34.539+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py        67  0.01s             1           0  0.15s           2025-05-12T07:55:04
+/opt/airflow/dags/financial_report_dag.py                            1           0  0.25s           2025-05-12T07:55:21
+/opt/airflow/dags/yfinance_scraping_dag.py                           1           0  0.16s           2025-05-12T07:55:33
+/opt/airflow/dags/master_pipeline_dag.py                             1           0  0.17s           2025-05-12T07:55:33
+/opt/airflow/dags/news_scraping_dag.py         68  0.01s             1           0  0.15s           2025-05-12T07:55:04
+================================================================================
+[2025-05-12T07:56:04.996+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py        72  0.01s             1           0  0.16s           2025-05-12T07:55:34
+/opt/airflow/dags/financial_report_dag.py                            1           0  0.12s           2025-05-12T07:55:51
+/opt/airflow/dags/yfinance_scraping_dag.py                           1           0  0.14s           2025-05-12T07:56:03
+/opt/airflow/dags/master_pipeline_dag.py                             1           0  0.15s           2025-05-12T07:56:03
+/opt/airflow/dags/news_scraping_dag.py         73  0.00s             1           0  0.15s           2025-05-12T07:55:34
+================================================================================
+[2025-05-12T07:56:35.457+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py        77  0.01s             1           0  0.16s           2025-05-12T07:56:05
+/opt/airflow/dags/financial_report_dag.py                            1           0  0.11s           2025-05-12T07:56:22
+/opt/airflow/dags/yfinance_scraping_dag.py                           1           0  0.13s           2025-05-12T07:56:34
+/opt/airflow/dags/master_pipeline_dag.py                             1           0  0.14s           2025-05-12T07:56:34
+/opt/airflow/dags/news_scraping_dag.py         78  0.00s             1           0  0.16s           2025-05-12T07:56:05
+================================================================================
+[2025-05-12T07:56:59.665+0000] {manager.py:759} INFO - Searching for files in /opt/airflow/dags
+[2025-05-12T07:56:59.681+0000] {manager.py:762} INFO - There are 5 files in /opt/airflow/dags
+[2025-05-12T07:57:05.881+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py        82  0.01s             1           0  0.13s           2025-05-12T07:56:35
+/opt/airflow/dags/financial_report_dag.py                            1           0  0.17s           2025-05-12T07:56:52
+/opt/airflow/dags/yfinance_scraping_dag.py                           1           0  0.13s           2025-05-12T07:57:04
+/opt/airflow/dags/master_pipeline_dag.py                             1           0  0.14s           2025-05-12T07:57:04
+/opt/airflow/dags/news_scraping_dag.py         83  0.00s             1           0  0.13s           2025-05-12T07:56:35
+================================================================================
+[2025-05-12T07:57:36.291+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py        87  0.01s             1           0  0.14s           2025-05-12T07:57:06
+/opt/airflow/dags/financial_report_dag.py                            1           0  0.11s           2025-05-12T07:57:23
+/opt/airflow/dags/yfinance_scraping_dag.py                           1           0  0.12s           2025-05-12T07:57:35
+/opt/airflow/dags/master_pipeline_dag.py                             1           0  0.13s           2025-05-12T07:57:35
+/opt/airflow/dags/news_scraping_dag.py         88  0.00s             1           0  0.12s           2025-05-12T07:57:05
+================================================================================
+[2025-05-12T07:58:06.304+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py                              1           0  0.13s           2025-05-12T07:57:36
+/opt/airflow/dags/financial_report_dag.py                            1           0  0.12s           2025-05-12T07:57:53
+/opt/airflow/dags/yfinance_scraping_dag.py                           1           0  0.14s           2025-05-12T07:58:02
+/opt/airflow/dags/master_pipeline_dag.py                             1           0  0.11s           2025-05-12T07:58:05
+/opt/airflow/dags/news_scraping_dag.py                               1           0  0.13s           2025-05-12T07:57:36
+================================================================================
+[2025-05-12T07:58:36.822+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py        97  0.01s             1           0  0.12s           2025-05-12T07:58:06
+/opt/airflow/dags/financial_report_dag.py                            1           0  0.11s           2025-05-12T07:58:23
+/opt/airflow/dags/yfinance_scraping_dag.py                           1           0  0.11s           2025-05-12T07:58:32
+/opt/airflow/dags/master_pipeline_dag.py                             1           0  0.12s           2025-05-12T07:58:35
+/opt/airflow/dags/news_scraping_dag.py         98  0.00s             1           0  0.12s           2025-05-12T07:58:06
+================================================================================
+[2025-05-12T07:59:07.260+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py       102  0.01s             1           0  0.13s           2025-05-12T07:58:36
+/opt/airflow/dags/financial_report_dag.py                            1           0  0.12s           2025-05-12T07:58:54
+/opt/airflow/dags/yfinance_scraping_dag.py                           1           0  0.11s           2025-05-12T07:59:03
+/opt/airflow/dags/master_pipeline_dag.py                             1           0  0.17s           2025-05-12T07:59:06
+/opt/airflow/dags/news_scraping_dag.py        103  0.00s             1           0  0.13s           2025-05-12T07:58:36
+================================================================================
+[2025-05-12T07:59:37.674+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py       107  0.01s             1           0  0.15s           2025-05-12T07:59:07
+/opt/airflow/dags/financial_report_dag.py                            1           0  0.15s           2025-05-12T07:59:24
+/opt/airflow/dags/yfinance_scraping_dag.py                           1           0  0.11s           2025-05-12T07:59:33
+/opt/airflow/dags/master_pipeline_dag.py                             1           0  0.12s           2025-05-12T07:59:36
+/opt/airflow/dags/news_scraping_dag.py        108  0.00s             1           0  0.15s           2025-05-12T07:59:07
+================================================================================
+[2025-05-12T08:00:08.090+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py       112  0.01s             1           0  0.13s           2025-05-12T07:59:37
+/opt/airflow/dags/financial_report_dag.py                            1           0  0.10s           2025-05-12T07:59:54
+/opt/airflow/dags/yfinance_scraping_dag.py                           1           0  0.12s           2025-05-12T08:00:04
+/opt/airflow/dags/master_pipeline_dag.py                             1           0  0.12s           2025-05-12T08:00:07
+/opt/airflow/dags/news_scraping_dag.py        113  0.00s             1           0  0.13s           2025-05-12T07:59:37
+================================================================================
+[2025-05-12T08:00:38.751+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py                              1           0  0.23s           2025-05-12T08:00:33
+/opt/airflow/dags/financial_report_dag.py                            1           0  0.32s           2025-05-12T08:00:23
+/opt/airflow/dags/yfinance_scraping_dag.py                           1           0  0.13s           2025-05-12T08:00:34
+/opt/airflow/dags/master_pipeline_dag.py                             1           0  0.22s           2025-05-12T08:00:33
+/opt/airflow/dags/news_scraping_dag.py                               1           0  0.20s           2025-05-12T08:00:33
+================================================================================
+[2025-05-12T08:01:08.895+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py                              1           0  0.15s           2025-05-12T08:01:03
+/opt/airflow/dags/financial_report_dag.py                            1           0  0.13s           2025-05-12T08:00:54
+/opt/airflow/dags/yfinance_scraping_dag.py                           1           0  0.13s           2025-05-12T08:01:05
+/opt/airflow/dags/master_pipeline_dag.py                             1           0  0.27s           2025-05-12T08:00:53
+/opt/airflow/dags/news_scraping_dag.py                               1           0  0.17s           2025-05-12T08:01:03
+================================================================================
+[2025-05-12T08:01:39.145+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py                              1           0  0.14s           2025-05-12T08:01:34
+/opt/airflow/dags/financial_report_dag.py                            1           0  0.17s           2025-05-12T08:01:13
+/opt/airflow/dags/yfinance_scraping_dag.py                           1           0  0.18s           2025-05-12T08:01:24
+/opt/airflow/dags/master_pipeline_dag.py                             1           0  0.24s           2025-05-12T08:01:24
+/opt/airflow/dags/news_scraping_dag.py                               1           0  0.14s           2025-05-12T08:01:34
+================================================================================
+[2025-05-12T08:02:00.373+0000] {manager.py:759} INFO - Searching for files in /opt/airflow/dags
+[2025-05-12T08:02:00.406+0000] {manager.py:762} INFO - There are 5 files in /opt/airflow/dags
+[2025-05-12T08:02:09.607+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py                              1           0  0.13s           2025-05-12T08:02:04
+/opt/airflow/dags/financial_report_dag.py                            1           0  0.12s           2025-05-12T08:01:44
+/opt/airflow/dags/yfinance_scraping_dag.py                           1           0  0.18s           2025-05-12T08:02:04
+/opt/airflow/dags/master_pipeline_dag.py                             1           0  0.13s           2025-05-12T08:01:54
+/opt/airflow/dags/news_scraping_dag.py                               1           0  0.13s           2025-05-12T08:02:04
+================================================================================
+[2025-05-12T08:02:40.025+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py                              1           0  0.14s           2025-05-12T08:02:34
+/opt/airflow/dags/financial_report_dag.py                            1           0  0.12s           2025-05-12T08:02:14
+/opt/airflow/dags/yfinance_scraping_dag.py                           1           0  0.15s           2025-05-12T08:02:35
+/opt/airflow/dags/master_pipeline_dag.py                             1           0  0.12s           2025-05-12T08:02:24
+/opt/airflow/dags/news_scraping_dag.py                               1           0  0.14s           2025-05-12T08:02:35
+================================================================================
+[2025-05-12T08:03:10.480+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py                              1           0  0.15s           2025-05-12T08:03:05
+/opt/airflow/dags/financial_report_dag.py                            1           0  0.36s           2025-05-12T08:02:45
+/opt/airflow/dags/yfinance_scraping_dag.py                           1           0  0.15s           2025-05-12T08:03:05
+/opt/airflow/dags/master_pipeline_dag.py                             1           0  0.12s           2025-05-12T08:02:55
+/opt/airflow/dags/news_scraping_dag.py                               1           0  0.11s           2025-05-12T08:03:05
+================================================================================
+[2025-05-12T08:03:21.393+0000] {manager.py:469} INFO - Exiting gracefully upon receiving signal 15
+[2025-05-12T08:05:51.609+0000] {manager.py:487} INFO - Processing files using up to 2 processes at a time 
+[2025-05-12T08:05:51.610+0000] {manager.py:488} INFO - Process each file at most once every 30 seconds
+[2025-05-12T08:05:51.611+0000] {manager.py:489} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2025-05-12T08:05:51.616+0000] {manager.py:759} INFO - Searching for files in /opt/airflow/dags
+[2025-05-12T08:05:51.640+0000] {manager.py:762} INFO - There are 5 files in /opt/airflow/dags
+[2025-05-12T08:05:52.136+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py        30  0.12s             0           0
+/opt/airflow/dags/financial_report_dag.py                            0           0
+/opt/airflow/dags/yfinance_scraping_dag.py                           0           0
+/opt/airflow/dags/news_scraping_dag.py                               0           0
+/opt/airflow/dags/master_pipeline_dag.py                             1           0  0.40s           2025-05-12T08:05:52
+================================================================================
+[2025-05-12T08:06:22.969+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py                              1           0  0.24s           2025-05-12T08:06:12
+/opt/airflow/dags/financial_report_dag.py                            1           0  0.15s           2025-05-12T08:06:22
+/opt/airflow/dags/yfinance_scraping_dag.py     45  0.01s             1           0  0.37s           2025-05-12T08:05:52
+/opt/airflow/dags/master_pipeline_dag.py       44  0.02s             1           0  0.40s           2025-05-12T08:05:52
+/opt/airflow/dags/news_scraping_dag.py                               1           0  0.24s           2025-05-12T08:06:12
+================================================================================
+[2025-05-12T08:06:53.408+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py                              1           0  0.16s           2025-05-12T08:06:42
+/opt/airflow/dags/financial_report_dag.py                            1           0  0.11s           2025-05-12T08:06:52
+/opt/airflow/dags/yfinance_scraping_dag.py                           1           0  0.13s           2025-05-12T08:06:32
+/opt/airflow/dags/master_pipeline_dag.py       50  0.00s             1           0  0.21s           2025-05-12T08:06:23
+/opt/airflow/dags/news_scraping_dag.py                               1           0  0.16s           2025-05-12T08:06:42
+================================================================================
+[2025-05-12T08:07:23.644+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py                              1           0  0.13s           2025-05-12T08:07:12
+/opt/airflow/dags/financial_report_dag.py                            1           0  0.12s           2025-05-12T08:07:22
+/opt/airflow/dags/yfinance_scraping_dag.py                           1           0  0.16s           2025-05-12T08:07:12
+/opt/airflow/dags/master_pipeline_dag.py       56  0.00s             1           0  0.13s           2025-05-12T08:06:53
+/opt/airflow/dags/news_scraping_dag.py                               1           0  0.12s           2025-05-12T08:07:12
+================================================================================
+[2025-05-12T08:07:54.039+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py                              1           0  0.13s           2025-05-12T08:07:42
+/opt/airflow/dags/financial_report_dag.py                            1           0  0.10s           2025-05-12T08:07:53
+/opt/airflow/dags/yfinance_scraping_dag.py                           1           0  0.13s           2025-05-12T08:07:42
+/opt/airflow/dags/master_pipeline_dag.py       61  0.00s             1           0  0.12s           2025-05-12T08:07:23
+/opt/airflow/dags/news_scraping_dag.py                               1           0  0.10s           2025-05-12T08:07:42
+================================================================================
+[2025-05-12T08:08:24.341+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py                              1           0  0.12s           2025-05-12T08:08:13
+/opt/airflow/dags/financial_report_dag.py                            1           0  0.11s           2025-05-12T08:08:23
+/opt/airflow/dags/yfinance_scraping_dag.py                           1           0  0.13s           2025-05-12T08:08:13
+/opt/airflow/dags/master_pipeline_dag.py       66  0.00s             1           0  0.12s           2025-05-12T08:07:54
+/opt/airflow/dags/news_scraping_dag.py                               1           0  0.12s           2025-05-12T08:08:13
+================================================================================
+[2025-05-12T08:08:54.756+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py                              1           0  0.15s           2025-05-12T08:08:43
+/opt/airflow/dags/financial_report_dag.py                            1           0  0.11s           2025-05-12T08:08:53
+/opt/airflow/dags/yfinance_scraping_dag.py                           1           0  0.13s           2025-05-12T08:08:43
+/opt/airflow/dags/master_pipeline_dag.py       71  0.00s             1           0  0.12s           2025-05-12T08:08:24
+/opt/airflow/dags/news_scraping_dag.py                               1           0  0.13s           2025-05-12T08:08:43
+================================================================================
+[2025-05-12T08:09:25.235+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py                              1           0  0.12s           2025-05-12T08:09:14
+/opt/airflow/dags/financial_report_dag.py                            1           0  0.12s           2025-05-12T08:09:24
+/opt/airflow/dags/yfinance_scraping_dag.py                           1           0  0.13s           2025-05-12T08:09:14
+/opt/airflow/dags/master_pipeline_dag.py       76  0.00s             1           0  0.14s           2025-05-12T08:08:54
+/opt/airflow/dags/news_scraping_dag.py                               1           0  0.11s           2025-05-12T08:09:14
+================================================================================
+[2025-05-12T08:09:55.564+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py                              1           0  0.15s           2025-05-12T08:09:44
+/opt/airflow/dags/financial_report_dag.py                            1           0  0.10s           2025-05-12T08:09:54
+/opt/airflow/dags/yfinance_scraping_dag.py                           1           0  0.13s           2025-05-12T08:09:44
+/opt/airflow/dags/master_pipeline_dag.py       81  0.00s             1           0  0.14s           2025-05-12T08:09:25
+/opt/airflow/dags/news_scraping_dag.py                               1           0  0.13s           2025-05-12T08:09:44
+================================================================================
+[2025-05-12T08:10:26.067+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py                              1           0  0.15s           2025-05-12T08:10:14
+/opt/airflow/dags/financial_report_dag.py                            1           0  0.11s           2025-05-12T08:10:25
+/opt/airflow/dags/yfinance_scraping_dag.py                           1           0  0.13s           2025-05-12T08:10:14
+/opt/airflow/dags/master_pipeline_dag.py       86  0.00s             1           0  0.13s           2025-05-12T08:09:55
+/opt/airflow/dags/news_scraping_dag.py                               1           0  0.11s           2025-05-12T08:10:15
+================================================================================
+[2025-05-12T08:10:52.449+0000] {manager.py:759} INFO - Searching for files in /opt/airflow/dags
+[2025-05-12T08:10:52.489+0000] {manager.py:762} INFO - There are 5 files in /opt/airflow/dags
+[2025-05-12T08:10:52.565+0000] {manager.py:469} INFO - Exiting gracefully upon receiving signal 15
+[2025-05-12T08:12:34.933+0000] {manager.py:487} INFO - Processing files using up to 2 processes at a time 
+[2025-05-12T08:12:34.940+0000] {manager.py:488} INFO - Process each file at most once every 30 seconds
+[2025-05-12T08:12:34.942+0000] {manager.py:489} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2025-05-12T08:12:34.945+0000] {manager.py:759} INFO - Searching for files in /opt/airflow/dags
+[2025-05-12T08:12:34.962+0000] {manager.py:762} INFO - There are 5 files in /opt/airflow/dags
+[2025-05-12T08:12:35.321+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/transformation_dag.py        29  0.06s             0           0
+/opt/airflow/dags/financial_report_dag.py                            0           0
+/opt/airflow/dags/yfinance_scraping_dag.py                           0           0
+/opt/airflow/dags/master_pipeline_dag.py       28  0.25s             0           0
+/opt/airflow/dags/news_scraping_dag.py                               0           0
+================================================================================
+[2025-05-12T08:13:05.903+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py        34  0.01s             1           0  0.26s           2025-05-12T08:12:35
+/opt/airflow/dags/financial_report_dag.py                            1           0  0.15s           2025-05-12T08:12:35
+/opt/airflow/dags/yfinance_scraping_dag.py                           1           0  0.19s           2025-05-12T08:12:35
+/opt/airflow/dags/master_pipeline_dag.py       33  0.01s             1           0  0.26s           2025-05-12T08:12:35
+/opt/airflow/dags/news_scraping_dag.py                               1           0  0.18s           2025-05-12T08:12:35
+================================================================================
+[2025-05-12T08:13:36.351+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py        39  0.00s             1           0  0.14s           2025-05-12T08:13:06
+/opt/airflow/dags/financial_report_dag.py                            1           0  0.11s           2025-05-12T08:13:06
+/opt/airflow/dags/yfinance_scraping_dag.py                           1           0  0.13s           2025-05-12T08:13:06
+/opt/airflow/dags/master_pipeline_dag.py       38  0.01s             1           0  0.14s           2025-05-12T08:13:06
+/opt/airflow/dags/news_scraping_dag.py                               1           0  0.13s           2025-05-12T08:13:06
+================================================================================
+[2025-05-12T08:14:06.835+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py        44  0.00s             1           0  0.17s           2025-05-12T08:13:36
+/opt/airflow/dags/financial_report_dag.py                            1           0  0.19s           2025-05-12T08:13:36
+/opt/airflow/dags/yfinance_scraping_dag.py                           1           0  0.14s           2025-05-12T08:13:36
+/opt/airflow/dags/master_pipeline_dag.py       43  0.01s             1           0  0.16s           2025-05-12T08:13:36
+/opt/airflow/dags/news_scraping_dag.py                               1           0  0.20s           2025-05-12T08:13:36
+================================================================================
+[2025-05-12T08:14:37.409+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py        49  0.00s             1           0  0.14s           2025-05-12T08:14:06
+/opt/airflow/dags/financial_report_dag.py                            1           0  0.14s           2025-05-12T08:14:07
+/opt/airflow/dags/yfinance_scraping_dag.py                           1           0  0.11s           2025-05-12T08:14:07
+/opt/airflow/dags/master_pipeline_dag.py       48  0.01s             1           0  0.17s           2025-05-12T08:14:06
+/opt/airflow/dags/news_scraping_dag.py                               1           0  0.13s           2025-05-12T08:14:07
+================================================================================
+[2025-05-12T08:15:07.859+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py        54  0.00s             1           0  0.13s           2025-05-12T08:14:37
+/opt/airflow/dags/financial_report_dag.py                            1           0  0.11s           2025-05-12T08:14:37
+/opt/airflow/dags/yfinance_scraping_dag.py                           1           0  0.13s           2025-05-12T08:14:37
+/opt/airflow/dags/master_pipeline_dag.py       53  0.01s             1           0  0.14s           2025-05-12T08:14:37
+/opt/airflow/dags/news_scraping_dag.py                               1           0  0.13s           2025-05-12T08:14:37
+================================================================================
+[2025-05-12T08:15:38.490+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py        59  0.00s             1           0  0.20s           2025-05-12T08:15:08
+/opt/airflow/dags/financial_report_dag.py                            1           0  0.15s           2025-05-12T08:15:08
+/opt/airflow/dags/yfinance_scraping_dag.py                           1           0  0.12s           2025-05-12T08:15:08
+/opt/airflow/dags/master_pipeline_dag.py       58  0.01s             1           0  0.19s           2025-05-12T08:15:08
+/opt/airflow/dags/news_scraping_dag.py                               1           0  0.15s           2025-05-12T08:15:08
+================================================================================
+[2025-05-12T08:16:08.947+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py        64  0.00s             1           0  0.15s           2025-05-12T08:15:38
+/opt/airflow/dags/financial_report_dag.py                            1           0  0.12s           2025-05-12T08:15:38
+/opt/airflow/dags/yfinance_scraping_dag.py                           1           0  0.15s           2025-05-12T08:15:38
+/opt/airflow/dags/master_pipeline_dag.py       63  0.01s             1           0  0.17s           2025-05-12T08:15:38
+/opt/airflow/dags/news_scraping_dag.py                               1           0  0.14s           2025-05-12T08:15:38
+================================================================================
+[2025-05-12T08:16:39.401+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py        69  0.00s             1           0  0.13s           2025-05-12T08:16:09
+/opt/airflow/dags/financial_report_dag.py                            1           0  0.10s           2025-05-12T08:16:09
+/opt/airflow/dags/yfinance_scraping_dag.py                           1           0  0.14s           2025-05-12T08:16:09
+/opt/airflow/dags/master_pipeline_dag.py       68  0.01s             1           0  0.15s           2025-05-12T08:16:09
+/opt/airflow/dags/news_scraping_dag.py                               1           0  0.13s           2025-05-12T08:16:09
+================================================================================
+[2025-05-12T08:17:09.958+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py        74  0.00s             1           0  0.14s           2025-05-12T08:16:39
+/opt/airflow/dags/financial_report_dag.py                            1           0  0.14s           2025-05-12T08:16:39
+/opt/airflow/dags/yfinance_scraping_dag.py                           1           0  0.12s           2025-05-12T08:16:39
+/opt/airflow/dags/master_pipeline_dag.py       73  0.01s             1           0  0.14s           2025-05-12T08:16:39
+/opt/airflow/dags/news_scraping_dag.py                               1           0  0.13s           2025-05-12T08:16:39
+================================================================================
+[2025-05-12T08:17:35.758+0000] {manager.py:759} INFO - Searching for files in /opt/airflow/dags
+[2025-05-12T08:17:35.766+0000] {manager.py:762} INFO - There are 5 files in /opt/airflow/dags
+[2025-05-12T08:17:40.822+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py        79  0.00s             1           0  0.25s           2025-05-12T08:17:10
+/opt/airflow/dags/financial_report_dag.py                            1           0  0.24s           2025-05-12T08:17:10
+/opt/airflow/dags/yfinance_scraping_dag.py                           1           0  0.20s           2025-05-12T08:17:10
+/opt/airflow/dags/master_pipeline_dag.py       78  0.01s             1           0  0.24s           2025-05-12T08:17:10
+/opt/airflow/dags/news_scraping_dag.py                               1           0  0.23s           2025-05-12T08:17:10
+================================================================================
+[2025-05-12T08:17:48.757+0000] {manager.py:469} INFO - Exiting gracefully upon receiving signal 15
+[2025-05-12T08:29:33.402+0000] {manager.py:487} INFO - Processing files using up to 2 processes at a time 
+[2025-05-12T08:29:33.403+0000] {manager.py:488} INFO - Process each file at most once every 30 seconds
+[2025-05-12T08:29:33.404+0000] {manager.py:489} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2025-05-12T08:29:33.405+0000] {manager.py:759} INFO - Searching for files in /opt/airflow/dags
+[2025-05-12T08:29:33.432+0000] {manager.py:762} INFO - There are 5 files in /opt/airflow/dags
+[2025-05-12T08:29:34.516+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py        29  0.13s             0           0
+/opt/airflow/dags/financial_report_dag.py                            0           0
+/opt/airflow/dags/yfinance_scraping_dag.py     30  0.01s             0           0
+/opt/airflow/dags/news_scraping_dag.py                               0           0
+/opt/airflow/dags/master_pipeline_dag.py                             1           0  0.81s           2025-05-12T08:29:34
+================================================================================
+[2025-05-12T08:30:05.243+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py        34  0.01s             1           0  0.31s           2025-05-12T08:29:34
+/opt/airflow/dags/financial_report_dag.py                            1           0  0.35s           2025-05-12T08:29:35
+/opt/airflow/dags/yfinance_scraping_dag.py                           1           0  0.36s           2025-05-12T08:29:34
+/opt/airflow/dags/master_pipeline_dag.py       33  0.01s             1           0  0.81s           2025-05-12T08:29:34
+/opt/airflow/dags/news_scraping_dag.py                               1           0  0.36s           2025-05-12T08:29:35
+================================================================================
+[2025-05-12T08:30:35.886+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py        39  0.01s             1           0  0.16s           2025-05-12T08:30:05
+/opt/airflow/dags/financial_report_dag.py                            1           0  0.11s           2025-05-12T08:30:05
+/opt/airflow/dags/yfinance_scraping_dag.py                           1           0  0.15s           2025-05-12T08:30:05
+/opt/airflow/dags/master_pipeline_dag.py       38  0.02s             1           0  0.18s           2025-05-12T08:30:05
+/opt/airflow/dags/news_scraping_dag.py                               1           0  0.15s           2025-05-12T08:30:05
+================================================================================
+[2025-05-12T08:30:48.412+0000] {manager.py:469} INFO - Exiting gracefully upon receiving signal 15
+[2025-05-12T08:33:49.471+0000] {manager.py:487} INFO - Processing files using up to 2 processes at a time 
+[2025-05-12T08:33:49.472+0000] {manager.py:488} INFO - Process each file at most once every 30 seconds
+[2025-05-12T08:33:49.474+0000] {manager.py:489} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2025-05-12T08:33:49.477+0000] {manager.py:759} INFO - Searching for files in /opt/airflow/dags
+[2025-05-12T08:33:49.517+0000] {manager.py:762} INFO - There are 5 files in /opt/airflow/dags
+[2025-05-12T08:33:50.019+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/transformation_dag.py                              0           0
+/opt/airflow/dags/financial_report_dag.py      29  0.16s             0           0
+/opt/airflow/dags/yfinance_scraping_dag.py                           0           0
+/opt/airflow/dags/master_pipeline_dag.py       30  0.10s             0           0
+/opt/airflow/dags/news_scraping_dag.py                               0           0
+================================================================================
+[2025-05-12T08:34:20.666+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py                              1           0  0.60s           2025-05-12T08:33:51
+/opt/airflow/dags/financial_report_dag.py                            1           0  1.21s           2025-05-12T08:33:51
+/opt/airflow/dags/yfinance_scraping_dag.py                           1           0  0.16s           2025-05-12T08:34:19
+/opt/airflow/dags/master_pipeline_dag.py                             1           0  1.19s           2025-05-12T08:33:51
+/opt/airflow/dags/news_scraping_dag.py                               1           0  0.25s           2025-05-12T08:33:51
+================================================================================
+[2025-05-12T08:34:51.215+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py                              1           0  0.13s           2025-05-12T08:34:21
+/opt/airflow/dags/financial_report_dag.py                            1           0  0.16s           2025-05-12T08:34:21
+/opt/airflow/dags/yfinance_scraping_dag.py                           1           0  0.12s           2025-05-12T08:34:50
+/opt/airflow/dags/master_pipeline_dag.py                             1           0  0.18s           2025-05-12T08:34:21
+/opt/airflow/dags/news_scraping_dag.py                               1           0  0.12s           2025-05-12T08:34:22
+================================================================================
+[2025-05-12T08:35:21.730+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py                              1           0  0.16s           2025-05-12T08:34:52
+/opt/airflow/dags/financial_report_dag.py                            1           0  0.17s           2025-05-12T08:34:52
+/opt/airflow/dags/yfinance_scraping_dag.py                           1           0  0.17s           2025-05-12T08:35:20
+/opt/airflow/dags/master_pipeline_dag.py                             1           0  0.18s           2025-05-12T08:34:52
+/opt/airflow/dags/news_scraping_dag.py                               1           0  0.15s           2025-05-12T08:34:52
+================================================================================
+[2025-05-12T08:35:52.207+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py                              1           0  0.10s           2025-05-12T08:35:22
+/opt/airflow/dags/financial_report_dag.py                            1           0  0.13s           2025-05-12T08:35:22
+/opt/airflow/dags/yfinance_scraping_dag.py                           1           0  0.12s           2025-05-12T08:35:51
+/opt/airflow/dags/master_pipeline_dag.py                             1           0  0.13s           2025-05-12T08:35:22
+/opt/airflow/dags/news_scraping_dag.py                               1           0  0.11s           2025-05-12T08:35:23
+================================================================================
+[2025-05-12T08:36:22.666+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py                              1           0  0.14s           2025-05-12T08:35:53
+/opt/airflow/dags/financial_report_dag.py                            1           0  0.14s           2025-05-12T08:35:53
+/opt/airflow/dags/yfinance_scraping_dag.py                           1           0  0.15s           2025-05-12T08:36:21
+/opt/airflow/dags/master_pipeline_dag.py                             1           0  0.17s           2025-05-12T08:35:53
+/opt/airflow/dags/news_scraping_dag.py                               1           0  0.13s           2025-05-12T08:35:53
+================================================================================
+[2025-05-12T08:36:53.092+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py                              1           0  0.12s           2025-05-12T08:36:23
+/opt/airflow/dags/financial_report_dag.py                            1           0  0.12s           2025-05-12T08:36:23
+/opt/airflow/dags/yfinance_scraping_dag.py                           1           0  0.18s           2025-05-12T08:36:52
+/opt/airflow/dags/master_pipeline_dag.py                             1           0  0.13s           2025-05-12T08:36:23
+/opt/airflow/dags/news_scraping_dag.py                               1           0  0.11s           2025-05-12T08:36:23
+================================================================================
+[2025-05-12T08:37:23.591+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py                              1           0  0.10s           2025-05-12T08:36:54
+/opt/airflow/dags/financial_report_dag.py                            1           0  0.13s           2025-05-12T08:36:54
+/opt/airflow/dags/yfinance_scraping_dag.py                           1           0  0.17s           2025-05-12T08:37:22
+/opt/airflow/dags/master_pipeline_dag.py                             1           0  0.13s           2025-05-12T08:36:54
+/opt/airflow/dags/news_scraping_dag.py                               1           0  0.11s           2025-05-12T08:36:54
+================================================================================
+[2025-05-12T08:37:54.249+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py                              1           0  0.18s           2025-05-12T08:37:25
+/opt/airflow/dags/financial_report_dag.py                            1           0  0.28s           2025-05-12T08:37:24
+/opt/airflow/dags/yfinance_scraping_dag.py                           1           0  0.14s           2025-05-12T08:37:53
+/opt/airflow/dags/master_pipeline_dag.py                             1           0  0.29s           2025-05-12T08:37:24
+/opt/airflow/dags/news_scraping_dag.py                               1           0  0.18s           2025-05-12T08:37:25
+================================================================================
+[2025-05-12T08:38:24.701+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py                              1           0  0.13s           2025-05-12T08:37:55
+/opt/airflow/dags/financial_report_dag.py                            1           0  0.14s           2025-05-12T08:37:55
+/opt/airflow/dags/yfinance_scraping_dag.py                           1           0  0.14s           2025-05-12T08:38:23
+/opt/airflow/dags/master_pipeline_dag.py                             1           0  0.14s           2025-05-12T08:37:55
+/opt/airflow/dags/news_scraping_dag.py                               1           0  0.13s           2025-05-12T08:37:55
+================================================================================
+[2025-05-12T08:38:50.167+0000] {manager.py:759} INFO - Searching for files in /opt/airflow/dags
+[2025-05-12T08:38:50.181+0000] {manager.py:762} INFO - There are 5 files in /opt/airflow/dags
+[2025-05-12T08:38:55.235+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py                              1           0  0.14s           2025-05-12T08:38:26
+/opt/airflow/dags/financial_report_dag.py                            1           0  0.17s           2025-05-12T08:38:25
+/opt/airflow/dags/yfinance_scraping_dag.py                           1           0  0.13s           2025-05-12T08:38:54
+/opt/airflow/dags/master_pipeline_dag.py                             1           0  0.18s           2025-05-12T08:38:25
+/opt/airflow/dags/news_scraping_dag.py                               1           0  0.12s           2025-05-12T08:38:26
+================================================================================
+[2025-05-12T08:39:25.739+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py                              1           0  0.16s           2025-05-12T08:38:56
+/opt/airflow/dags/financial_report_dag.py                            1           0  0.15s           2025-05-12T08:38:56
+/opt/airflow/dags/yfinance_scraping_dag.py                           1           0  0.15s           2025-05-12T08:39:24
+/opt/airflow/dags/master_pipeline_dag.py                             1           0  0.17s           2025-05-12T08:38:56
+/opt/airflow/dags/news_scraping_dag.py                               1           0  0.15s           2025-05-12T08:38:56
+================================================================================
+[2025-05-12T08:39:56.403+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py                              1           0  0.15s           2025-05-12T08:39:27
+/opt/airflow/dags/financial_report_dag.py                            1           0  0.20s           2025-05-12T08:39:26
+/opt/airflow/dags/yfinance_scraping_dag.py                           1           0  0.14s           2025-05-12T08:39:55
+/opt/airflow/dags/master_pipeline_dag.py                             1           0  0.20s           2025-05-12T08:39:26
+/opt/airflow/dags/news_scraping_dag.py                               1           0  0.14s           2025-05-12T08:39:27
+================================================================================
+[2025-05-12T08:40:26.925+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py                              1           0  0.17s           2025-05-12T08:39:57
+/opt/airflow/dags/financial_report_dag.py                            1           0  0.16s           2025-05-12T08:39:57
+/opt/airflow/dags/yfinance_scraping_dag.py                           1           0  0.12s           2025-05-12T08:40:26
+/opt/airflow/dags/master_pipeline_dag.py                             1           0  0.18s           2025-05-12T08:39:57
+/opt/airflow/dags/news_scraping_dag.py                               1           0  0.16s           2025-05-12T08:39:57
+================================================================================
+[2025-05-12T08:40:57.449+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py                              1           0  0.12s           2025-05-12T08:40:28
+/opt/airflow/dags/financial_report_dag.py                            1           0  0.14s           2025-05-12T08:40:28
+/opt/airflow/dags/yfinance_scraping_dag.py                           1           0  0.16s           2025-05-12T08:40:56
+/opt/airflow/dags/master_pipeline_dag.py                             1           0  0.15s           2025-05-12T08:40:28
+/opt/airflow/dags/news_scraping_dag.py                               1           0  0.12s           2025-05-12T08:40:28
+================================================================================
+[2025-05-12T08:41:27.958+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py                              1           0  0.12s           2025-05-12T08:40:58
+/opt/airflow/dags/financial_report_dag.py                            1           0  0.15s           2025-05-12T08:40:58
+/opt/airflow/dags/yfinance_scraping_dag.py                           1           0  0.12s           2025-05-12T08:41:26
+/opt/airflow/dags/master_pipeline_dag.py                             1           0  0.15s           2025-05-12T08:40:58
+/opt/airflow/dags/news_scraping_dag.py                               1           0  0.11s           2025-05-12T08:40:58
+================================================================================
+[2025-05-12T08:41:58.383+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py                              1           0  0.13s           2025-05-12T08:41:29
+/opt/airflow/dags/financial_report_dag.py                            1           0  0.13s           2025-05-12T08:41:29
+/opt/airflow/dags/yfinance_scraping_dag.py                           1           0  0.12s           2025-05-12T08:41:57
+/opt/airflow/dags/master_pipeline_dag.py                             1           0  0.13s           2025-05-12T08:41:29
+/opt/airflow/dags/news_scraping_dag.py                               1           0  0.13s           2025-05-12T08:41:29
+================================================================================
+[2025-05-12T08:42:28.830+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py                              1           0  0.13s           2025-05-12T08:41:59
+/opt/airflow/dags/financial_report_dag.py                            1           0  0.13s           2025-05-12T08:41:59
+/opt/airflow/dags/yfinance_scraping_dag.py                           1           0  0.16s           2025-05-12T08:42:27
+/opt/airflow/dags/master_pipeline_dag.py                             1           0  0.14s           2025-05-12T08:41:59
+/opt/airflow/dags/news_scraping_dag.py                               1           0  0.12s           2025-05-12T08:41:59
+================================================================================
+[2025-05-12T08:42:59.250+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py                              1           0  0.12s           2025-05-12T08:42:30
+/opt/airflow/dags/financial_report_dag.py                            1           0  0.13s           2025-05-12T08:42:29
+/opt/airflow/dags/yfinance_scraping_dag.py                           1           0  0.11s           2025-05-12T08:42:58
+/opt/airflow/dags/master_pipeline_dag.py                             1           0  0.14s           2025-05-12T08:42:29
+/opt/airflow/dags/news_scraping_dag.py                               1           0  0.12s           2025-05-12T08:42:30
+================================================================================
+[2025-05-12T08:43:29.683+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py                              1           0  0.13s           2025-05-12T08:43:00
+/opt/airflow/dags/financial_report_dag.py                            1           0  0.13s           2025-05-12T08:43:00
+/opt/airflow/dags/yfinance_scraping_dag.py                           1           0  0.12s           2025-05-12T08:43:28
+/opt/airflow/dags/master_pipeline_dag.py                             1           0  0.14s           2025-05-12T08:43:00
+/opt/airflow/dags/news_scraping_dag.py                               1           0  0.12s           2025-05-12T08:43:00
+================================================================================
+[2025-05-12T08:43:50.510+0000] {manager.py:759} INFO - Searching for files in /opt/airflow/dags
+[2025-05-12T08:43:50.526+0000] {manager.py:762} INFO - There are 5 files in /opt/airflow/dags
+[2025-05-12T08:43:59.704+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py                              1           0  0.33s           2025-05-12T08:43:31
+/opt/airflow/dags/financial_report_dag.py                            1           0  0.35s           2025-05-12T08:43:31
+/opt/airflow/dags/yfinance_scraping_dag.py                           1           0  0.11s           2025-05-12T08:43:59
+/opt/airflow/dags/master_pipeline_dag.py                             1           0  0.42s           2025-05-12T08:43:31
+/opt/airflow/dags/news_scraping_dag.py                               1           0  0.29s           2025-05-12T08:43:31
+================================================================================
+[2025-05-12T08:44:30.099+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py                              1           0  0.17s           2025-05-12T08:44:01
+/opt/airflow/dags/financial_report_dag.py                            1           0  0.17s           2025-05-12T08:44:01
+/opt/airflow/dags/yfinance_scraping_dag.py    134  0.00s             1           0  0.11s           2025-05-12T08:43:59
+/opt/airflow/dags/master_pipeline_dag.py                             1           0  0.18s           2025-05-12T08:44:01
+/opt/airflow/dags/news_scraping_dag.py                               1           0  0.16s           2025-05-12T08:44:01
+================================================================================
+[2025-05-12T08:45:00.565+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py                              1           0  0.12s           2025-05-12T08:44:32
+/opt/airflow/dags/financial_report_dag.py                            1           0  0.15s           2025-05-12T08:44:32
+/opt/airflow/dags/yfinance_scraping_dag.py    139  0.01s             1           0  0.11s           2025-05-12T08:44:30
+/opt/airflow/dags/master_pipeline_dag.py                             1           0  0.15s           2025-05-12T08:44:32
+/opt/airflow/dags/news_scraping_dag.py                               1           0  0.12s           2025-05-12T08:44:32
+================================================================================
+[2025-05-12T08:45:30.630+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py                              1           0  0.34s           2025-05-12T08:45:03
+/opt/airflow/dags/financial_report_dag.py                            1           0  0.44s           2025-05-12T08:45:03
+/opt/airflow/dags/yfinance_scraping_dag.py                           1           0  0.38s           2025-05-12T08:45:00
+/opt/airflow/dags/master_pipeline_dag.py                             1           0  0.38s           2025-05-12T08:45:03
+/opt/airflow/dags/news_scraping_dag.py                               1           0  0.21s           2025-05-12T08:45:03
+================================================================================
+[2025-05-12T08:46:01.332+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py                              1           0  0.15s           2025-05-12T08:45:34
+/opt/airflow/dags/financial_report_dag.py                            1           0  0.16s           2025-05-12T08:45:34
+/opt/airflow/dags/yfinance_scraping_dag.py                           1           0  0.36s           2025-05-12T08:45:32
+/opt/airflow/dags/master_pipeline_dag.py                             1           0  0.19s           2025-05-12T08:45:34
+/opt/airflow/dags/news_scraping_dag.py                               1           0  0.14s           2025-05-12T08:45:34
+================================================================================
+[2025-05-12T08:46:31.792+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py                              1           0  0.14s           2025-05-12T08:46:04
+/opt/airflow/dags/financial_report_dag.py                            1           0  0.14s           2025-05-12T08:46:04
+/opt/airflow/dags/yfinance_scraping_dag.py                           1           0  0.13s           2025-05-12T08:46:02
+/opt/airflow/dags/master_pipeline_dag.py                             1           0  0.15s           2025-05-12T08:46:04
+/opt/airflow/dags/news_scraping_dag.py                               1           0  0.13s           2025-05-12T08:46:04
+================================================================================
+[2025-05-12T08:47:02.263+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py                              1           0  0.16s           2025-05-12T08:46:35
+/opt/airflow/dags/financial_report_dag.py                            1           0  0.14s           2025-05-12T08:46:34
+/opt/airflow/dags/yfinance_scraping_dag.py                           1           0  0.11s           2025-05-12T08:46:32
+/opt/airflow/dags/master_pipeline_dag.py                             1           0  0.14s           2025-05-12T08:46:34
+/opt/airflow/dags/news_scraping_dag.py                               1           0  0.16s           2025-05-12T08:46:35
+================================================================================
+[2025-05-12T08:47:32.967+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py                              1           0  0.21s           2025-05-12T08:47:05
+/opt/airflow/dags/financial_report_dag.py                            1           0  0.29s           2025-05-12T08:47:05
+/opt/airflow/dags/yfinance_scraping_dag.py                           1           0  0.12s           2025-05-12T08:47:03
+/opt/airflow/dags/master_pipeline_dag.py                             1           0  0.29s           2025-05-12T08:47:05
+/opt/airflow/dags/news_scraping_dag.py                               1           0  0.21s           2025-05-12T08:47:05
+================================================================================
+[2025-05-12T08:48:03.380+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py                              1           0  0.11s           2025-05-12T08:47:36
+/opt/airflow/dags/financial_report_dag.py                            1           0  0.13s           2025-05-12T08:47:36
+/opt/airflow/dags/yfinance_scraping_dag.py                           1           0  0.10s           2025-05-12T08:47:34
+/opt/airflow/dags/master_pipeline_dag.py                             1           0  0.13s           2025-05-12T08:47:36
+/opt/airflow/dags/news_scraping_dag.py                               1           0  0.12s           2025-05-12T08:47:36
+================================================================================
+[2025-05-12T08:48:33.882+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py                              1           0  0.11s           2025-05-12T08:48:06
+/opt/airflow/dags/financial_report_dag.py                            1           0  0.13s           2025-05-12T08:48:06
+/opt/airflow/dags/yfinance_scraping_dag.py                           1           0  0.11s           2025-05-12T08:48:04
+/opt/airflow/dags/master_pipeline_dag.py                             1           0  0.14s           2025-05-12T08:48:06
+/opt/airflow/dags/news_scraping_dag.py                               1           0  0.10s           2025-05-12T08:48:06
+================================================================================
+[2025-05-12T08:48:51.321+0000] {manager.py:759} INFO - Searching for files in /opt/airflow/dags
+[2025-05-12T08:48:51.328+0000] {manager.py:762} INFO - There are 5 files in /opt/airflow/dags
+[2025-05-12T08:49:04.406+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py                              1           0  0.12s           2025-05-12T08:48:37
+/opt/airflow/dags/financial_report_dag.py                            1           0  0.13s           2025-05-12T08:48:37
+/opt/airflow/dags/yfinance_scraping_dag.py                           1           0  0.12s           2025-05-12T08:48:35
+/opt/airflow/dags/master_pipeline_dag.py                             1           0  0.14s           2025-05-12T08:48:37
+/opt/airflow/dags/news_scraping_dag.py                               1           0  0.11s           2025-05-12T08:48:37
+================================================================================
+[2025-05-12T08:49:34.862+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py                              1           0  0.11s           2025-05-12T08:49:07
+/opt/airflow/dags/financial_report_dag.py                            1           0  0.13s           2025-05-12T08:49:07
+/opt/airflow/dags/yfinance_scraping_dag.py                           1           0  0.13s           2025-05-12T08:49:05
+/opt/airflow/dags/master_pipeline_dag.py                             1           0  0.13s           2025-05-12T08:49:07
+/opt/airflow/dags/news_scraping_dag.py                               1           0  0.11s           2025-05-12T08:49:07
+================================================================================
+[2025-05-12T08:50:05.341+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py                              1           0  0.13s           2025-05-12T08:49:38
+/opt/airflow/dags/financial_report_dag.py                            1           0  0.12s           2025-05-12T08:49:38
+/opt/airflow/dags/yfinance_scraping_dag.py                           1           0  0.13s           2025-05-12T08:49:36
+/opt/airflow/dags/master_pipeline_dag.py                             1           0  0.14s           2025-05-12T08:49:38
+/opt/airflow/dags/news_scraping_dag.py                               1           0  0.12s           2025-05-12T08:49:38
+================================================================================
+[2025-05-12T08:50:35.760+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py                              1           0  0.12s           2025-05-12T08:50:08
+/opt/airflow/dags/financial_report_dag.py                            1           0  0.13s           2025-05-12T08:50:08
+/opt/airflow/dags/yfinance_scraping_dag.py                           1           0  0.11s           2025-05-12T08:50:06
+/opt/airflow/dags/master_pipeline_dag.py                             1           0  0.13s           2025-05-12T08:50:08
+/opt/airflow/dags/news_scraping_dag.py                               1           0  0.12s           2025-05-12T08:50:08
+================================================================================
+[2025-05-12T08:51:06.166+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py                              1           0  0.12s           2025-05-12T08:50:39
+/opt/airflow/dags/financial_report_dag.py                            1           0  0.11s           2025-05-12T08:50:38
+/opt/airflow/dags/yfinance_scraping_dag.py                           1           0  0.10s           2025-05-12T08:50:36
+/opt/airflow/dags/master_pipeline_dag.py                             1           0  0.13s           2025-05-12T08:50:38
+/opt/airflow/dags/news_scraping_dag.py                               1           0  0.12s           2025-05-12T08:50:39
+================================================================================
+[2025-05-12T08:51:36.602+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py                              1           0  0.13s           2025-05-12T08:51:09
+/opt/airflow/dags/financial_report_dag.py                            1           0  0.13s           2025-05-12T08:51:09
+/opt/airflow/dags/yfinance_scraping_dag.py                           1           0  0.11s           2025-05-12T08:51:07
+/opt/airflow/dags/master_pipeline_dag.py                             1           0  0.14s           2025-05-12T08:51:09
+/opt/airflow/dags/news_scraping_dag.py                               1           0  0.12s           2025-05-12T08:51:09
+================================================================================
+[2025-05-12T08:52:07.047+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/transformation_dag.py                              1           0  0.14s           2025-05-12T08:51:39
+/opt/airflow/dags/financial_report_dag.py                            1           0  0.14s           2025-05-12T08:51:39
+/opt/airflow/dags/yfinance_scraping_dag.py                           1           0  0.12s           2025-05-12T08:51:37
+/opt/airflow/dags/master_pipeline_dag.py                             1           0  0.15s           2025-05-12T08:51:39
+/opt/airflow/dags/news_scraping_dag.py                               1           0  0.14s           2025-05-12T08:51:39
+================================================================================

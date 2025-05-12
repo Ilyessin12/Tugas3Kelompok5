@@ -1,0 +1,10 @@
+[2025-05-12T08:05:58.027+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: data_transformation_pipeline.transform_data scheduled__2025-05-11T08:00:08.175555+00:00 [queued]>
+[2025-05-12T08:05:58.073+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: data_transformation_pipeline.transform_data scheduled__2025-05-11T08:00:08.175555+00:00 [queued]>
+[2025-05-12T08:05:58.075+0000] {taskinstance.py:1359} INFO - Starting attempt 2 of 2
+[2025-05-12T08:05:58.120+0000] {taskinstance.py:1380} INFO - Executing <Task(DockerOperator): transform_data> on 2025-05-11 08:00:08.175555+00:00
+[2025-05-12T08:05:58.137+0000] {standard_task_runner.py:57} INFO - Started process 51 to run task
+[2025-05-12T08:05:58.161+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'data_transformation_pipeline', 'transform_data', 'scheduled__2025-05-11T08:00:08.175555+00:00', '--job-id', '30', '--raw', '--subdir', 'DAGS_FOLDER/transformation_dag.py', '--cfg-path', '/tmp/tmp669xehlo']
+[2025-05-12T08:05:58.166+0000] {standard_task_runner.py:85} INFO - Job 30: Subtask transform_data
+[2025-05-12T08:05:58.230+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 30 for task transform_data (invalid interpolation syntax in 'dag_id={{ ti.dag_id }}/run_id={{ ti.run_id }}/task_id={{ ti.task_id }}/{% if ti.map_index >= 0 %}map_index={{ ti.map_index }}/{% endif %}attempt={{ try_number }}.log' at position 72; 51)
+[2025-05-12T08:05:58.253+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2025-05-12T08:05:58.345+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check
