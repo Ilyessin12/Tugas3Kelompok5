@@ -1,27 +1,39 @@
 import os
 import json
 import logging
+import requests
 from dotenv import load_dotenv
 import pymongo
 from datetime import datetime
-import google.generativeai as genai
+import time
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
-# Configure Gemini API
-genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
-
-# Function to summarize text using Gemini API
-def summarize_text_with_gemini(text, max_length=150):
+def summarize_text_with_nlpcloud(text, max_length=150):
     try:
-        model = genai.GenerativeModel('gemini-1.5-pro')
-        prompt = f"Summarize the following text in up to {max_length} words:\n{text}"
-        response = model.generate_content(prompt)
-        summary = response.text.strip()
-        logger.info("Summarization completed for text: %s", text[:50])
-        return summary
+        api_key = os.getenv("NLP_CLOUD_API_KEY")
+        url = "https://api.nlpcloud.io/v1/bart-large-cnn/summarization"
+        headers = {
+            "Authorization": f"Token {api_key}",
+            "Content-Type": "application/json"
+        }
+        data = {
+            "text": text,
+            "size": "medium"  # Options: one-sentence, small, medium, large
+        }
+        response = requests.post(url, headers=headers, json=data)
+        if response.status_code == 200:
+            summary = response.json().get("summary_text", "")
+            logger.info("Summarization completed for text: %s", text[:50])
+            return summary
+        elif response.status_code == 429:
+            logger.warning("Rate limit exceeded, retrying in 20 seconds")
+            time.sleep(20)
+            return summarize_text_with_nlpcloud(text, max_length)  # Retry once
+        else:
+            raise Exception(f"API request failed with status {response.status_code}: {response.text}")
     except Exception as e:
         logger.error("Error in summarization: %s", str(e))
         raise
@@ -52,7 +64,7 @@ def process_news_data_from_mongo(checkpoint_interval=150, start_from=0):
         db = client[mongo_db_name]
         collection = db[mongo_collection_name]
         
-        news_data = list(collection.find())
+        news_data = list(collection.find())[:1]
         total_items = len(news_data)
         logger.info("Processing %d news items from MongoDB", total_items)
         
@@ -71,7 +83,7 @@ def process_news_data_from_mongo(checkpoint_interval=150, start_from=0):
             
             if news_item["content"]:
                 full_text = f"{news_item['Judul']} {news_item['content']}"
-                summary = summarize_text_with_gemini(full_text)
+                summary = summarize_text_with_nlpcloud(full_text)
                 news_item["Ringkasan"] = summary
             else:
                 news_item["Ringkasan"] = "Tidak ada konten berita untuk diringkas."
@@ -98,7 +110,7 @@ def upload_to_mongodb(data, replace_existing=False):
     try:
         connection_string = os.environ.get('MONGODB_CONNECTION_STRING')
         database_name = os.environ.get('MONGODB_DATABASE_NAME')
-        collection_name = os.environ.get('COLLECTION_NEWS_SUMMARY_DATA', "Data_Berita_Ringkasan")
+        collection_name = os.environ.get('COLLECTION_NEWS_SUMMARY_DATA', "Docker_Transformasi_Berita")
         
         logger.info("Connecting to MongoDB: %s", database_name)
         client = pymongo.MongoClient(connection_string)

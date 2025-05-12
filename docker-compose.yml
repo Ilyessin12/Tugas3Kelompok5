@@ -41,7 +41,7 @@ services:
       - NEWS_PART=5
       - CHECKPOINT_INTERVAL=150
       - MONGO_OUTPUT_COLLECTION=Docker_Transformasi_Laporan_Keuangan
-      - GEMINI_API_KEY=${GEMINI_API_KEY}
+      - NLP_CLOUD_API_KEY=${NLP_CLOUD_API_KEY}
     depends_on:
       - mongodb
     networks:

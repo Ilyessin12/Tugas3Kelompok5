@@ -68,7 +68,15 @@ def transform_financial_reports():
         StructField("EquityAttributableToEquityOwnersOfParentEntity", DoubleType(), True),
         StructField("NetCashFlowOp", DoubleType(), True),
         StructField("NetCashFlowInv", DoubleType(), True),
-        StructField("NetCashFlowFin", DoubleType(), True)
+        StructField("NetCashFlowFin", DoubleType(), True),
+        StructField("PeriodOfFinancialStatementsSubmissions", StringType(), True),
+        StructField("DateOfBoardOfDirectorsStatementLetter", StringType(), True),
+        StructField("CurrentPeriodStartDate", StringType(), True),
+        StructField("CurrentPeriodEndDate", StringType(), True),
+        StructField("PriorYearEndDate", StringType(), True),
+        StructField("PriorPeriodStartDate", StringType(), True),
+        StructField("PriorPeriodEndDate", StringType(), True),
+        StructField("Prior2YearEndDate", StringType(), True)
     ])
     
     df_selected = df.withColumn("EntityName", col("xbrl_data.EntityName")) \
@@ -88,7 +96,15 @@ def transform_financial_reports():
         .withColumn("NetCashFlowInv", 
                    col("xbrl_data.NetCashFlowsReceivedFromUsedInInvestingActivities").cast(DoubleType())) \
         .withColumn("NetCashFlowFin", 
-                   col("xbrl_data.NetCashFlowsReceivedFromUsedInFinancingActivities").cast(DoubleType()))
+                   col("xbrl_data.NetCashFlowsReceivedFromUsedInFinancingActivities").cast(DoubleType())) \
+        .withColumn("PeriodOfFinancialStatementsSubmissions", col("xbrl_data.PeriodOfFinancialStatementsSubmissions")) \
+        .withColumn("DateOfBoardOfDirectorsStatementLetter", col("xbrl_data.DateOfBoardOfDirectorsStatementLetter")) \
+        .withColumn("CurrentPeriodStartDate", col("xbrl_data.CurrentPeriodStartDate")) \
+        .withColumn("CurrentPeriodEndDate", col("xbrl_data.CurrentPeriodEndDate")) \
+        .withColumn("PriorYearEndDate", col("xbrl_data.PriorYearEndDate")) \
+        .withColumn("PriorPeriodStartDate", col("xbrl_data.PriorPeriodStartDate")) \
+        .withColumn("PriorPeriodEndDate", col("xbrl_data.PriorPeriodEndDate")) \
+        .withColumn("Prior2YearEndDate", col("xbrl_data.Prior2YearEndDate"))
     
     for field in schema:
         if field.name not in df_selected.columns:
