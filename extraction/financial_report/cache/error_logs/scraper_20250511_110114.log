@@ -1,4 +1,0 @@
-2025-05-11 11:01:14,859 - root - INFO - Logging initialized. Log file: /app/cache/error_logs/scraper_20250511_110114.log
-2025-05-11 11:01:14,862 - __main__ - INFO - Starting financial report pipeline in mode 'all'
-2025-05-11 11:01:14,865 - __main__ - INFO - Starting Financial Report scraper...
-2025-05-11 11:01:14,866 - __main__ - ERROR - Error running financial report pipeline: IDXFinancialScraper.__init__() missing 2 required positional arguments: 'base_download_dir' and 'output_file'

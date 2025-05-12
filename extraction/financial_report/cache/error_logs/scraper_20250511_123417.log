@@ -1,3 +1,0 @@
-2025-05-11 12:34:17,332 - root - INFO - Logging initialized. Log file: /app/cache/error_logs/scraper_20250511_123417.log
-2025-05-11 12:34:17,335 - __main__ - INFO - Starting financial report pipeline in mode 'all'
-2025-05-11 12:34:17,339 - __main__ - INFO - Starting Financial Report scraper...
