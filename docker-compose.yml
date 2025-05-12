@@ -8,7 +8,13 @@ services:
       dockerfile: Dockerfile
     ports:
       - "3000:3000"
-    # environment:
+    volumes:
+      - .:/app
+      - /app/node_modules # Hindari menimpa node_modules
+    environment:
+      NEXT_PUBLIC_API_URL: ${NEXT_PUBLIC_API_URL}
+    env_file:
+      - .env
     restart: unless-stopped
     container_name: bigdata5-dashboard
     
