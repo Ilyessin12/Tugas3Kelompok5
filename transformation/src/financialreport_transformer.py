@@ -4,7 +4,7 @@
 import os
 from dotenv import load_dotenv
 from pyspark.sql import SparkSession
-from pyspark.sql.types import StructType, StructField, StringType, DoubleType
+from pyspark.sql.types import StructType, StructField, StringType, DoubleType, MapType
 from pyspark.sql.functions import col, lit, coalesce
 
 def transform_financial_reports():
@@ -50,11 +50,83 @@ def transform_financial_reports():
         .config("spark.mongodb.output.collection", mongo_output_collection) \
         .getOrCreate()
     
-    # Load and transform data
-    spark.conf.set("spark.sql.caseSensitive", True)
-    df = spark.read.format("com.mongodb.spark.sql.DefaultSource").load()
+    # Define schema for xbrl_data
+    xbrl_schema = StructType([
+        StructField("EntityName", StringType(), True),
+        StructField("EntityCode", StringType(), True),
+        StructField("SalesAndRevenue", StringType(), True),
+        StructField("GrossProfit", StringType(), True),
+        StructField("ProfitFromOperation", StringType(), True),
+        StructField("ProfitLoss", StringType(), True),
+        StructField("CashAndCashEquivalents", StringType(), True),
+        StructField("Assets", StringType(), True),
+        StructField("ShortTermBankLoans", StringType(), True),
+        StructField("LongTermBankLoans", StringType(), True),
+        StructField("EquityAttributableToEquityOwnersOfParentEntity", StringType(), True),
+        StructField("NetCashFlowsReceivedFromUsedInOperatingActivities", StringType(), True),
+        StructField("NetCashFlowsReceivedFromUsedInInvestingActivities", StringType(), True),
+        StructField("NetCashFlowsReceivedFromUsedInFinancingActivities", StringType(), True),
+        StructField("PeriodOfFinancialStatementsSubmissions", StringType(), True),
+        StructField("DateOfBoardOfDirectorsStatementLetter", StringType(), True),
+        StructField("CurrentPeriodStartDate", StringType(), True),
+        StructField("CurrentPeriodEndDate", StringType(), True),
+        StructField("PriorYearEndDate", StringType(), True),
+        StructField("PriorPeriodStartDate", StringType(), True),
+        StructField("PriorPeriodEndDate", StringType(), True),
+        StructField("Prior2YearEndDate", StringType(), True),
+    ])
     
-    schema = StructType([
+    # Define top-level schema
+    input_schema = StructType([
+        StructField("_id", StringType(), True),
+        StructField("company", StringType(), True),
+        StructField("timestamp", StringType(), True),
+        StructField("taxonomy", MapType(StringType(), StringType()), True),
+        StructField("xbrl_data", xbrl_schema, True),
+    ])
+    
+    # Load data with specified schema
+    df = spark.read.format("com.mongodb.spark.sql.DefaultSource").schema(input_schema).load()
+    
+    # Transform data
+    spark.conf.set("spark.sql.caseSensitive", True)
+    
+    df_selected = df.withColumn("EntityName", col("xbrl_data.EntityName")) \
+        .withColumn("EntityCode", col("xbrl_data.EntityCode")) \
+        .withColumn("SalesAndRevenue", col("xbrl_data.SalesAndRevenue").cast(DoubleType())) \
+        .withColumn("GrossProfit", col("xbrl_data.GrossProfit").cast(DoubleType())) \
+        .withColumn("ProfitFromOperation", col("xbrl_data.ProfitFromOperation").cast(DoubleType())) \
+        .withColumn("ProfitLoss", col("xbrl_data.ProfitLoss").cast(DoubleType())) \
+        .withColumn("CashAndCashEquivalents", col("xbrl_data.CashAndCashEquivalents").cast(DoubleType())) \
+        .withColumn("Assets", col("xbrl_data.Assets").cast(DoubleType())) \
+        .withColumn("ShortTermBankLoans", col("xbrl_data.ShortTermBankLoans").cast(DoubleType())) \
+        .withColumn("LongTermBankLoans", col("xbrl_data.LongTermBankLoans").cast(DoubleType())) \
+        .withColumn("EquityAttributableToEquityOwnersOfParentEntity", 
+                   col("xbrl_data.EquityAttributableToEquityOwnersOfParentEntity").cast(DoubleType())) \
+        .withColumn("NetCashFlowOp", 
+                   col("xbrl_data.NetCashFlowsReceivedFromUsedInOperatingActivities").cast(DoubleType())) \
+        .withColumn("NetCashFlowInv", 
+                   col("xbrl_data.NetCashFlowsReceivedFromUsedInInvestingActivities").cast(DoubleType())) \
+        .withColumn("NetCashFlowFin", 
+                   col("xbrl_data.NetCashFlowsReceivedFromUsedInFinancingActivities").cast(DoubleType())) \
+        .withColumn("PeriodOfFinancialStatementsSubmissions", 
+                   col("xbrl_data.PeriodOfFinancialStatementsSubmissions")) \
+        .withColumn("DateOfBoardOfDirectorsStatementLetter", 
+                   col("xbrl_data.DateOfBoardOfDirectorsStatementLetter")) \
+        .withColumn("CurrentPeriodStartDate", col("xbrl_data.CurrentPeriodStartDate")) \
+        .withColumn("CurrentPeriodEndDate", col("xbrl_data.CurrentPeriodEndDate")) \
+        .withColumn("PriorYearEndDate", col("xbrl_data.PriorYearEndDate")) \
+        .withColumn("PriorPeriodStartDate", col("xbrl_data.PriorPeriodStartDate")) \
+        .withColumn("PriorPeriodEndDate", col("xbrl_data.PriorPeriodEndDate")) \
+        .withColumn("Prior2YearEndDate", col("xbrl_data.Prior2YearEndDate")) \
+        .withColumn("DebtToEquityRatio", 
+                   (col("ShortTermBankLoans") + col("LongTermBankLoans")) / 
+                   coalesce(col("EquityAttributableToEquityOwnersOfParentEntity"), lit(1.0))) \
+        .withColumn("ReturnOnAssets", 
+                   col("ProfitLoss") / coalesce(col("Assets"), lit(1.0)))
+    
+    # Define the final schema for output
+    output_schema = StructType([
         StructField("EntityName", StringType(), True),
         StructField("EntityCode", StringType(), True),
         StructField("SalesAndRevenue", DoubleType(), True),
@@ -76,41 +148,15 @@ def transform_financial_reports():
         StructField("PriorYearEndDate", StringType(), True),
         StructField("PriorPeriodStartDate", StringType(), True),
         StructField("PriorPeriodEndDate", StringType(), True),
-        StructField("Prior2YearEndDate", StringType(), True)
+        StructField("Prior2YearEndDate", StringType(), True),
+        StructField("DebtToEquityRatio", DoubleType(), True),
+        StructField("ReturnOnAssets", DoubleType(), True)
     ])
     
-    df_selected = df.withColumn("EntityName", col("xbrl_data.EntityName")) \
-        .withColumn("EntityCode", col("xbrl_data.EntityCode")) \
-        .withColumn("SalesAndRevenue", col("xbrl_data.SalesAndRevenue").cast(DoubleType())) \
-        .withColumn("GrossProfit", col("xbrl_data.GrossProfit").cast(DoubleType())) \
-        .withColumn("ProfitFromOperation", col("xbrl_data.ProfitFromOperation").cast(DoubleType())) \
-        .withColumn("ProfitLoss", col("xbrl_data.ProfitLoss").cast(DoubleType())) \
-        .withColumn("CashAndCashEquivalents", col("xbrl_data.CashAndCashEquivalents").cast(DoubleType())) \
-        .withColumn("Assets", col("xbrl_data.Assets").cast(DoubleType())) \
-        .withColumn("ShortTermBankLoans", col("xbrl_data.ShortTermBankLoans").cast(DoubleType())) \
-        .withColumn("LongTermBankLoans", col("xbrl_data.LongTermBankLoans").cast(DoubleType())) \
-        .withColumn("EquityAttributableToEquityOwnersOfParentEntity", 
-                   col("xbrl_data.EquityAttributableToEquityOwnersOfParentEntity").cast(DoubleType())) \
-        .withColumn("NetCashFlowOp", 
-                   col("xbrl_data.NetCashFlowsReceivedFromUsedInOperatingActivities").cast(DoubleType())) \
-        .withColumn("NetCashFlowInv", 
-                   col("xbrl_data.NetCashFlowsReceivedFromUsedInInvestingActivities").cast(DoubleType())) \
-        .withColumn("NetCashFlowFin", 
-                   col("xbrl_data.NetCashFlowsReceivedFromUsedInFinancingActivities").cast(DoubleType())) \
-        .withColumn("PeriodOfFinancialStatementsSubmissions", col("xbrl_data.PeriodOfFinancialStatementsSubmissions")) \
-        .withColumn("DateOfBoardOfDirectorsStatementLetter", col("xbrl_data.DateOfBoardOfDirectorsStatementLetter")) \
-        .withColumn("CurrentPeriodStartDate", col("xbrl_data.CurrentPeriodStartDate")) \
-        .withColumn("CurrentPeriodEndDate", col("xbrl_data.CurrentPeriodEndDate")) \
-        .withColumn("PriorYearEndDate", col("xbrl_data.PriorYearEndDate")) \
-        .withColumn("PriorPeriodStartDate", col("xbrl_data.PriorPeriodStartDate")) \
-        .withColumn("PriorPeriodEndDate", col("xbrl_data.PriorPeriodEndDate")) \
-        .withColumn("Prior2YearEndDate", col("xbrl_data.Prior2YearEndDate"))
+    # Select only the columns in the output schema
+    df_final = df_selected.select(output_schema.fieldNames())
     
-    for field in schema:
-        if field.name not in df_selected.columns:
-            df_selected = df_selected.withColumn(field.name, lit(None).cast(field.dataType))
-    
-    df_final = df_selected.select(schema.fieldNames())
+    # Fill null values with 0 for numeric fields
     df_final = df_final.na.fill(0)
     
     # Write to MongoDB
